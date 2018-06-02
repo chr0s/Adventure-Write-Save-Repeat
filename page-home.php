@@ -9,9 +9,7 @@
     <div class="row" >
         <div id="writer" class="awsr-front-grid awsr-front-grid-left col-sm-6 ">
             <h1>
-                <span style="vertical-align: -25vh;">
-                    <small>A freelance &nbsp;</small><a href="<?php echo home_url('/a-writer'); ?>">writer</a>
-                </span>
+                <small>A freelance &nbsp;</small><a href="<?php echo home_url('/a-writer'); ?>">writer</a>
             </h1>
 
             <p>
@@ -31,9 +29,7 @@
 
         <div id="web-designer" class="awsr-front-grid awsr-front-grid-right col-sm-6 ">
             <h1 id="home">
-                <span style="vertical-align: -25vh;">
-                    <small>&amp; </small>
-                    <a href="<?php echo home_url('/a-web-designer'); ?>">web designer</a>
+                <small>&amp; </small><a href="<?php echo home_url('/a-web-designer'); ?>">web designer</a>
 
             </h1>
             </p>
@@ -57,7 +53,10 @@
     <div class="row" id="work-together">
         <div class="col" style="text-align:center;">
             Want to work together? Let's chat,
-            <a href="https://chrislee.is/contact-me">digitally</a> or over coffee ☕ </div>
+            <a href="https://chrislee.is/contact-me">digitally</a> or over coffee ☕ 
+        </div>
     </div>
+
+</div>
 
     <?php get_footer(); ?>

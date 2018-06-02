@@ -57,11 +57,9 @@ if(is_single() || is_page()) {
 
 <body <?php body_class( $awsr_classes ); ?> >
 
-    <div class="container-fluid">
-
         <!-- Initiate header -->
 
-        <div class="awsr-header">
+        <div class="awsr-header" >
 
             <div class="row">
 
@@ -80,7 +78,7 @@ if(is_single() || is_page()) {
         </div>
         <!-- .awsr-header -->
 
-        <div class="awsr-sub-header">
+        <div class="awsr-sub-header" style="position: sticky; top:0px;">
 
             <div class="row">
 
@@ -107,3 +105,5 @@ if(is_single() || is_page()) {
 
         </div>
         <!-- .awsr-sub-header -->
+
+        <div class="container-fluid">

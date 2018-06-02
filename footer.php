@@ -5,7 +5,7 @@
 <?php wp_footer(); ?>
 
 </div>
-<!-- .container -->
+<!-- .container-fluid -->
 
 </body>
 

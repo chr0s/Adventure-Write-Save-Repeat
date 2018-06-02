@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="awsr-background" style="background-color: whitesmoke;"></div>
+<!-- <div class="awsr-background" style="background-color: whitesmoke;"></div> -->
 
-<div class="awsr-content" style="top: 35vh;">
+<div class="container" >
 
     <h2>The blog</h2>
 
@@ -82,6 +82,6 @@ echo $html; ?>
 
 
 </div>
-<!-- .awsr-content -->
+<!-- .awsr-container -->
 
 <?php get_footer(); ?>

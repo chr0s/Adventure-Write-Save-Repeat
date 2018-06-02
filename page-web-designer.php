@@ -10,14 +10,14 @@
 
     <!-- <div class="awsr-background" style="background-image: url('<?php the_post_thumbnail_url('full'); ?>');"></div> -->
 
-    <div class="awsr-background-resp">
+    <!-- <div class="awsr-background-resp">
         <img style="width: 100vw; height: auto; padding:0px; margin:0px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
-    </div>
+    </div> -->
 
 
     <!-- Start of the post info -->
 
-    <div class="awsr-content" style="position: relative; border-top: none; top: 120px;">
+    <div class="container">
 
         <h2>
             WEB PRESENCES THAT 🎶 SING 🎶
@@ -145,6 +145,6 @@
     </div>
     <!-- .row -->
     </div>
-    <!-- .awsr-content -->
+    <!-- .container -->
 
     <?php get_footer(); ?>

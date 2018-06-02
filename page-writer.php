@@ -6,18 +6,14 @@
 
  get_header(); ?>
 
-    <!-- Start of the loop -->
-
     <!-- <div class="awsr-background" style="background-image: url('<?php the_post_thumbnail_url('full'); ?>');"></div> -->
 
-    <div class="awsr-background-resp">
+    <!-- <div class="awsr-background-resp">
         <img style="width: 100vw; height: auto; padding:0px; margin:0px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
-    </div>
+    </div> -->
 
-
-    <!-- Start of the post info -->
-
-    <div class="awsr-content" style="position: relative; border-top: none; top: 120px;">
+    <div class="container-fluid" >
+    <div class="container" style="background-color: white;">
         <h2>WORDS TO MAKE YOUR BUSINESS 💥 POP 💥</h2>
         <div class="row">
             <div class="col-md-8">
@@ -261,6 +257,8 @@
         </div>
         <!-- .row -->
     </div>
-    <!-- .awsr-content -->
+    <!-- .container -->
+    </div>
+    <!-- .container-fluid -->
 
     <?php get_footer(); ?>

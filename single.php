@@ -1,16 +1,10 @@
 <?php get_header(); ?>
 
-</div>
-<!-- .container-fluid -->
+</div><!-- container-fluid -->
 
 <?php $filter = get_post_meta(get_the_ID(), 'filter', true); ?>
 
-<div class="top-container" style="border: none;
-  width: 100vw;
-  max-width: 100%;
-  height: calc(100vh - 5px);
-  position: relative;
-  z-index: 1;">
+<div class="container-fluid" style="width: 100vw; max-width: 100%; padding: 0px;" >
 
     <?php 
     
@@ -20,18 +14,16 @@
 
 
 
-    <div class="awsr-image-to-fix" style="width: auto; height: 100%;">
 
-        <img style="filter: <?php echo $filter; ?>;  position: fixed;
+        <img style="filter: <?php echo $filter; ?>;  
   object-fit: cover;
-  height: 100%;
   width: 100vw;
   max-width: 100%;
   left: 0;
   top: 0;" class="background" src="<?php the_post_thumbnail_url('full'); ?>">
 
-    </div>
-    <!-- .awsr-image-to-fix -->
+   
+</div>    <!-- top-container -->
 
     <div class="awsr-new-title-to-fix" style="background-color: transparent;
   position: absolute;
@@ -60,7 +52,7 @@
 </div>
 <!-- .top-container -->
 
-<div class="bottom-container" style="
+<!-- <div class="bottom-container" style="
   width: 100vw;
   max-width: 100%;
   position: relative;
@@ -71,7 +63,9 @@
 
 
 
-    <div class="content">
+    <div class="content"> -->
+
+    <div class="container" style="background-color: white; border-top: 1px solid #ffb600; ">
 
         <div class="awsr-single-title-resp">
             <h2 id="awsr-single-title-resp">
