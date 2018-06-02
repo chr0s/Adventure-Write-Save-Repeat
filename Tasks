@@ -1,0 +1,54 @@
+Layout
+    Custom post types
+        Trips
+            Gallery of all
+            Gallery images have title and short description
+            Individual ones are category pages for blogs with that category // all content managed via posts
+        Websites
+            "Simple, efficient web presences say it best, I think"
+            Portfolio with gallery and short description of each
+            Portfolio page is category for blogs with that category // as above
+            Post format is 'gallery' and a few screenshots of the site are included
+
+Before making live 
+    Remove flush rewrite rules
+
+Small tweaks
+    Register new smaller image size for featured images on category pages
+    Make line breaks in editor render on trips page
+    Formalise color scheme: ffb600 / ffc639 / FFD264 / 2b84a6 / 808080 / ff7a5e
+
+Outstanding Stack Overflow Qs
+    Query title of page for post loop
+
+Site elements 
+    Breadcrumbs
+    Attempt to use nav for header instead of custom fixed divs
+    Sort container out so all content renders properly
+    Remove tags
+
+Trips  
+X    Set up the custom post types
+    Have it so that a gallery of a few images is used for the tile in the gallery
+    Query category name by name of trip, rather than absolute
+
+Home
+    Align center center for small layouts
+
+Search        
+X    Style the box
+X    Link to relevant results page
+    Style landing page
+
+Bootstrap
+X    Install
+X    Enqueue
+
+Gallery
+X    Bootstrap-ify tiles
+    Refine tiles to have same aspect ratio as featured images (16:9) // removes need to crop them
+    Use JS to make height relative to width, so always 16:9 // keeps consistency
+
+Custom fields
+    Gallery: let user set attachment (with drop down)
+    Single: let user set attachment (with drop down)

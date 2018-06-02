@@ -4,7 +4,7 @@
 
 <div class="awsr-content-archive">
 
- <!--   <h2>Archive of posts abouta
+ <!--   <h2>Archive of posts about
         <?php single_tag_title(); ?>
 </h2> -->
 

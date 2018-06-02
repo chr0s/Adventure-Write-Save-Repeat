@@ -1,0 +1,643 @@
+/*
+    Theme name: Adventure Write Save Repeat
+    Author: Chris Lee
+    Author URI: https://chrislee.is/
+    Description: Adventure, write, save, repeat. In orange.
+    Version: π.1
+    Tags: travel, tiles, full screen images, orange
+*/
+
+/* resets */
+
+h1,
+h2,
+h3,
+h4 {
+    padding: 0px;
+    margin: 0px;
+    font-family: Raleway;
+}
+
+blockquote {
+    color: #ffb600;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+p {
+    padding-top: 5px;
+}
+
+/* CSS */
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: Serif;
+}
+
+body {
+    /*     height: 100%;
+        width: 100%; */
+    color: darkslategray;
+    background-size: cover;
+    background-color: whitesmoke;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+a {
+    font-weight: 700;
+}
+
+a,
+a:link,
+a:visited {
+    color: #ffb600;
+}
+
+a:hover,
+a:active {
+    color: #ffc639;
+}
+
+.awsr-sub-header a,
+.awsr-sub-header a:link,
+.awsr-sub-header a:visited,
+.awsr-sub-header a:hover,
+.awsr-sub-header a:active {
+    color: white;
+    font-weight: 700;
+}
+
+h1 {
+    text-transform: uppercase;
+	font-size: 32px;
+}
+
+h1 a {
+    font-weight: 500;
+}
+
+
+
+h2 {
+    font-weight: 500;
+    color: darkslategrey;
+    text-transform: uppercase;
+}
+
+h2#awsr-single-title {
+    font-size: 45px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: whitesmoke;
+    line-height: 1.4;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0px 30px 0px;
+}
+
+h3#home {
+    font-size: 16px;
+    padding: 0px;
+    display: inline;
+    background-color: whitesmoke;
+    font-weight: 600;
+}
+
+h3#blog {
+    margin-bottom: -25px;
+    margin-left: -40px;
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #888888;
+}
+
+h4 a {
+    font-weight: 500;
+}
+
+.awsr-resp-img {
+    display: none;
+}
+
+/* WP theme Overrides and fixes for dumb little shit */
+
+ul.post-categories {
+    display: inline;
+    list-style-type: none;
+}
+
+.awsr-content-archive li {
+    display: inline;
+}
+
+hr.resp {
+    display: none;
+}
+
+hr#blog {
+    border-color: #ffb600;
+    margin: 0px 0px 30px 0px;
+    margin-left: -40px;
+}
+
+.wp-caption-text {
+    max-width: 97.5%;
+}
+
+.row {
+    max-width: 100vw;
+}
+
+/* Container */
+
+.container {
+    padding-top: 95px;
+}
+
+/* Home */
+
+/* #web-designer:hover + #writer {
+    content: url('https://kristinabogle26.files.wordpress.com/2012/04/safesurfing.jpeg');
+}  
+
+#writer:hover + #web-designer {
+    content: url('https://chrislee.is/wp-content/uploads/2017/10/Typewriter-1.png');
+} 
+
+*/
+
+#web-designer:hover:after,
+#writer:hover:after {
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+/*    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom; */
+    z-index: -1;
+}
+
+.awsr-front-grid {
+    text-align: center;
+    height: auto;
+} 
+
+
+
+.awsr-front-grid-right {
+    text-align: left;
+}
+
+.awsr-front-grid-left {
+    text-align: right;
+}
+
+/* Header */
+
+.awsr-header,
+.awsr-sub-header {
+    text-align: center;
+    z-index: 2;
+    position: fixed;
+    font-family: Raleway;
+    text-transform: uppercase;
+    width: 100vw;
+}
+
+.awsr-header {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    background-color: #FFDB80;
+    color: white;
+}
+
+.awsr-header a {
+    font-weight: 900;
+}
+
+.awsr-sub-header {
+    top: 60px;
+    left: 0px;
+    font-size: 16px;
+    color: white;
+    height: auto;
+    text-align: center;
+    padding: 5px 0px;
+    border-bottom: solid 1px #ffb600;
+    background-color: #ffb600;
+    font-weight: 400;
+}
+
+.awsr-sub-header a {
+    font-weight: 500;
+}
+
+.awsr-header h1 {
+    color: white;
+    display: inline;
+    font-weight: 900;
+    font-size: 50px;
+    text-shadow: 2px 2px #ffb600;
+}
+
+.awsr-header a,
+.awsr-header a:hover,
+.awsr-header a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.awsr-header ul,
+.awsr-sub-header ul {
+    list-style-type: none;
+}
+
+.awsr-header li,
+.awsr-sub-header li {
+    display: inline;
+}
+
+.thumbnail-img-single {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    background-size: cover;
+    z-index: 0;
+    width: 100vw;
+}
+
+.post-content-single {
+    position: absolute;
+    width: 100%;
+    top: 80vh;
+    background-color: white;
+}
+
+/* Search */
+
+.widgets-area input {
+    padding: 2px 5px;
+    color: white;
+    border: solid 1px white;
+    background-color: #ffc639;
+    font-size: 12px;
+}
+
+.widgets-area input::placeholder {
+    color: white;
+}
+
+.widgets-area input:focus {
+    outline: none;
+}
+
+/* Single */
+
+.awsr-background {
+    /*     overflow: hidden; */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 95px;
+    left: 0px;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.awsr-background-resp {
+    display: none;
+}
+
+.awsr-single-title {
+    position: absolute;
+    top: 65vh;
+    text-align: left;
+    color: whitesmoke;
+    z-index: 0;
+    max-width: 95vw;
+}
+
+.awsr-single-title-resp {
+    display: none;
+}
+
+.awsr-content,
+.awsr-content-single,
+.awsr-content-archive,
+.awsr-content-404,
+.awsr-content-testimonial,
+.awsr-content-blank {
+    border-top: 1px solid #ffb600;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0px;
+    padding: 50px 5vw;
+    background-color: white;
+}
+
+.awsr-content {
+    top: 70vh;
+}
+
+.awsr-content-single {
+    top: 90vh;
+}
+
+.awsr-content-archive,
+.awsr-content-blank {
+    top: 100px;
+    border-bottom: 1px solid #ffb600;
+}
+
+.awsr-content-404 {
+    top: 30vh;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ffb600;
+}
+
+.awsr-content-testimonial {
+    top: 30vh;
+    border-bottom: 1px solid #ffb600;
+}
+
+.the-content {
+    margin-left: 50px;
+    width: 750px;
+    font-size: 18px;
+}
+
+#testimonial {
+    margin-left: 100px;
+}
+
+.awsr-ride-blurb {
+    margin-left: 5px;
+    border-bottom: solid 1px #ffb600;
+    width: 80%;
+    font-family: serif;
+}
+
+.the-content a,
+.awsr-ride-blurb a {
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #ffb600;
+    color: darkslategrey;
+}
+
+.the-content a:hover,
+.the-content a:active,
+.awsr-ride-blurb a:hover,
+.awsr-ride-blurb a:active {
+    color: #ffb600;
+}
+
+.awsr-nav {
+    text-align: center;
+}
+
+/* Gallery */
+
+.awsr-gallery-tile {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.awsr-gallery-title {
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    border-top: 1px solid #ffb600;
+    border-right: 1px solid #ffb600;
+    border-bottom: 1px solid #ffb600;
+    max-width: 80%;
+    padding: 2%;
+}
+
+.awsr-gallery-img {
+    border: 1px solid #ffb600;
+    width: 100%;
+}
+
+.awsr-portfolio-img {
+    filter: grayscale(100%);
+}
+
+/* Comments */
+
+#comment,
+#author,
+#email,
+#url {
+    padding: 2px 5px;
+    color: white;
+    border: solid 1px white;
+    background-color: #ffc639;
+}
+
+#submit {
+    background-color: #ffc639;
+    border: 1px solid #ffb600;
+    padding: 5px;
+    color: white;
+}
+
+/* Tags */
+
+.awsr-tags {
+    margin-bottom: 20px;
+}
+
+.awsr-tags a {
+    color: white;
+}
+
+#awsr-tag {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #ffb600;
+    text-transform: uppercase;
+    font-family: Raleway;
+    padding: 2px 5px;
+    margin: 10px 10px 10px 0px;
+}
+
+/* Images */
+
+.entry-content img,
+.comment-content img,
+.widget img,
+iframe {
+    max-width: 97.5%;
+}
+
+img[class*="align"],
+img[class*="wp-image-"],
+.awsr-resp-img,
+.awsr-gallery-img,
+iframe {
+    height: auto;
+    max-width: 97.5%;
+}
+
+img.size-full {
+    max-width: 97.5%;
+    width: auto;
+}
+
+/* FORM */
+
+.wpcf7-form input, 
+.wpcf7-form textarea {
+    line-height: inherit;
+    background-color: #ffc639;
+    padding: 2px 5px;
+    border: solid 1px #ffb600;
+    color: white;
+    font-size: 12px;
+}
+
+/* BOTCHED STUFF TO FIX */
+
+.content {
+    width: 800px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 5vw;
+}
+
+.hide-resp {
+    display: none;
+}
+
+#work-together {
+	border-top: 0px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+    .the-content {
+        margin-left: 0px;
+        width: 90vw;
+        padding: 0px 2vw;
+    }
+    @media screen and (max-width: 576px) {
+        body.awsr-home .container-fluid {
+            background-color: white;
+        }
+        .container-fluid {
+            background-color: whitesmoke;
+        }
+        #cyclist:hover:after {
+            background-image: none;
+        }
+        #writer:hover:after {
+            background-image: none;
+        }
+        .awsr-front-grid {
+            height: auto;
+        }
+        .awsr-background,
+        .awsr-image-to-fix {
+            display: none;
+        }
+        .awsr-background-resp {
+            display: block;
+            left: 0px;
+        }
+        .awsr-content,
+        .awsr-content-single,
+        .awsr-content-404,
+        .awsr-content-testimonial {
+            position: absolute;
+            left: 0px;
+            top: 150px;
+            border: none;
+            border-top: 1px solid #ffb600;
+            width: 100vw;
+        }
+        .awsr-single-title,
+        .awsr-new-title-to-fix,
+        .top-container {
+            display: none;
+        }
+        h2#awsr-single-title-resp {
+            font-size: 30px;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: left;
+            color: darkslategrey;
+            margin-top: 10px;
+            line-height: 1;
+        }
+        .awsr-single-title-resp {
+            display: block;
+        }
+        .awsr-resp-img {
+            display: block;
+        }
+        hr.resp {
+            display: block;
+        }
+        .awsr-tags {
+            display: none;
+        }
+        /* botched stuff to fix */
+        .content {
+            width: 100vw;
+            margin: 0px;
+            padding: 2vw;
+            position: absolute;
+            top: 250px;
+            background-color: white;
+        }
+        .hide-resp {
+            display: block;
+        }
+        h3#blog,
+        hr#blog {
+            margin-left: 0px;
+        }
+		#home-border {
+			border-right: none;
+			border-left: none;
+			padding-right: none;
+			padding-left: none;
+		}
+		#writer {
+			text-align: left;
+		}
+		#work-together {
+			border-top: 0.5px solid #ffb600;
+       		margin-top: 25px;
+  		    padding-bottom: 25px;
+		}
+	}
