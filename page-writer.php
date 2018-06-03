@@ -12,7 +12,7 @@
         <img style="width: 100vw; height: auto; padding:0px; margin:0px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
     </div> -->
 
-    <div class="container" style="background-color: white;">
+    <div class="container" id="awsr-content" >
         <h2>WORDS TO MAKE YOUR BUSINESS 💥 POP 💥</h2>
         <div class="row">
             <div class="col-md-8">
@@ -39,7 +39,7 @@
         </div>
         <!-- row -->
 
-        <hr id="blog">
+        <hr>
 
         <div class="row">
             <div class="col-md-6">
@@ -98,7 +98,7 @@
 
                 <h3>Portfolio.</h3>
 
-				<small>Select highlights below, full portfolio <a href="https://chrislee.is/writing/">here</a>.</small>
+				<small>Highlights below, extensive portfolio <a href="<?php echo home_url('/writing-portfolio'); ?>">here</a>.</small>
 
                 <div class="row">
 
@@ -134,10 +134,11 @@
                             <!-- .awsr-gallery-title -->
                     </a>
 
-                    <div class="awsr-ride-blurb">
+                    <div >
                         <small>
                             <?php the_excerpt(); ?>
                         </small>
+                        <hr>
                     </div>
 
                     </div>

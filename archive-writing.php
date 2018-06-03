@@ -12,7 +12,7 @@
 
     <div class="row">
 
-test text
+writing archive! </div><div class="row">
 <?php echo category_description(); ?>
 
         <?php 

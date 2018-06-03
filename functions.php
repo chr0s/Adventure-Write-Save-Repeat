@@ -139,6 +139,7 @@ function awsr_custom_posts() {
             'publicly_queryable'    => true,
             'query_var'             => true,
             'rewrite'               => array(
+            'slug' => 'writing-portfolio',
 	        'with_front' => false
 	        ),
             'capability_type'       => 'post', // gives default settings of specified
@@ -227,7 +228,7 @@ function awsr_custom_posts() {
 
 // Portfolio pages
 
-        $labels5 = array(
+/*        $labels5 = array(
             'name'      => 'Portfolio',
             'singular'  => 'Portfolio',
             'add_new'   => 'Add portfolio',
@@ -257,7 +258,7 @@ function awsr_custom_posts() {
             'exclude_from_search'   =>  true,
             );
     
-        register_post_type('portfolio', $args5);
+        register_post_type('portfolio', $args5); */
 
 
 }
