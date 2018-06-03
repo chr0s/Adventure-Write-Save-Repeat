@@ -4,7 +4,7 @@
 
 <?php $filter = get_post_meta(get_the_ID(), 'filter', true); ?>
 
-<div class="container-fluid" style="width: 100vw; max-width: 100%; padding: 0px;" >
+<div class="container-fluid" style="width: 100vw; max-width: 100%; padding: 0px; border-bottom: 1px solid #ffb600; "" >
 
     <?php 
     
@@ -19,6 +19,7 @@
   object-fit: cover;
   width: 100vw;
   max-width: 100%;
+  max-height:80vh;
   left: 0;
   top: 0;" class="background" src="<?php the_post_thumbnail_url('full'); ?>">
 
@@ -65,7 +66,7 @@
 
     <div class="content"> -->
 
-    <div class="container" style="background-color: white; border-top: 1px solid #ffb600; ">
+    <div class="container" style="background-color:white;">
 
         <div class="awsr-single-title-resp">
             <h2 id="awsr-single-title-resp">
@@ -87,7 +88,6 @@
         </h4>
 
         <hr>
-        <img src="<?php the_post_thumbnail_url('small-wide'); ?>" class="hide-resp" style="width: 90vw">
         <div class="the-content">
 
             <?php the_content(); ?>

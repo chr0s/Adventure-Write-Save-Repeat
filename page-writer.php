@@ -12,7 +12,6 @@
         <img style="width: 100vw; height: auto; padding:0px; margin:0px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
     </div> -->
 
-    <div class="container-fluid" >
     <div class="container" style="background-color: white;">
         <h2>WORDS TO MAKE YOUR BUSINESS 💥 POP 💥</h2>
         <div class="row">
