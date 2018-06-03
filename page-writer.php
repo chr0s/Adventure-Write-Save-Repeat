@@ -42,7 +42,7 @@
         <hr>
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6 col-md-12">
 
                 <h3>What people say about my writing.</h3>
 
@@ -61,21 +61,21 @@
                 <div class="row">
                     <div class="col-sm-3">
 
-                        <a href="<?php the_permalink(); ?>">
-                            <img style="width: 100px; max-width: 100%; border: none;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
-                        </a>
+                       
+                            <img style="width: 80px; max-width: 100%; border: 1px solid darkslategrey; border-radius: 40px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                       
                         <br>
 
                     </div>
                     <!-- col -->
-                    <div class="col-sm-8">
+                    <div class="col-sm-9">
 
                         <h4>
                             <?php the_title(); ?>
-                        </h4>
-                        <?php the_excerpt(); ?>
-                        <h4>
-                            <!-- - <a href="<?php the_permalink(); ?>">Read full testimonial</a></h4> -->
+                        </h4><p>
+                        <small><?php the_excerpt(); ?></small>
+                        
+                            <!-- <h4>- <a href="<?php the_permalink(); ?>">Read full testimonial</a></h4> -->
                             <hr>
                     </div>
                     <!-- col -->
@@ -92,7 +92,7 @@
             </div>
             <!-- .col -->
 
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
 
                 <hr class="resp">
 
@@ -119,7 +119,7 @@
                     <a href="<?php the_permalink(); ?>">
                         <div class="col-sm-12 awsr-gallery-tile" style="height: auto;">
 
-                            <img class="awsr-gallery-img awsr-portfolio-img" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                            <img class="awsr-gallery-img" src="<?php the_post_thumbnail_url('small-wide'); ?>">
 
                             <!-- Start of the post info -->
 
@@ -135,7 +135,7 @@
                     </a>
 
                     <div >
-                        <small>
+                        <small style="text-align:right;">
                             <?php the_excerpt(); ?>
                         </small>
                         <hr>
@@ -155,13 +155,13 @@
             </div>
             <!-- .col -->
 
-            <div class="col-md-3">
+            <div class="col-lg-3 col-md-6">
 
                 <hr class="resp">
 
                 <h3>Clients.</h3>
 
-                <small>As a freelance writer</small>
+                <small>As a freelance writer.</small>
 
                 <div class="row">
 
@@ -179,9 +179,9 @@
 
                     <!-- Start of the featured image -->
 
-                    <div class="col-6 awsr-gallery-tile" style="height: auto;">
+                    <div class="col-4 col-sm-6 awsr-gallery-tile" style="height: auto;">
 
-                        <img class="awsr-gallery-img" style="border: none;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                        <img class="awsr-gallery-img" style="height:50px; max-height:50px; width: auto;border: none;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
 
                         <!-- Start of the post info : copy and paste from prev section if needed again -->
 
@@ -205,7 +205,7 @@
 
                 <div class="row">
 
-                    <small>Through agencies</small>
+                    <small>Through agencies.</small>
 
                 </div>
                 <!-- .row -->
@@ -226,9 +226,9 @@
 
                     <!-- Start of the featured image -->
 
-                    <div class="col-6 awsr-gallery-tile" style="height: auto;">
+                    <div class="col-4 col-sm-6 awsr-gallery-tile"  >
 
-                        <img class="awsr-gallery-img" style="border: none;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                        <img class="awsr-gallery-img" style="height:50px; max-height:50px; width: auto;border: none;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
 
                         <!-- Start of the post info : copy and paste from prev section if needed again -->
 

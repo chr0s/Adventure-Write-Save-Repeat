@@ -4,16 +4,20 @@
 
 <div class="container" id="awsr-content">
 
+<h2>My writing portfolio</h2> <p>
 
+An ever-growing gallery of my published writing. If the descriptions aren't juicy enough for you, click the image for more detailed information about each project.<p>
 
- <!--   <h2>Archive of posts about
-        <?php single_tag_title(); ?>
-</h2> -->
+If you like the look of these writings and fancy one for yourself, click the big blue button:
 
-    <div class="row">
+<div class="row" id="sticky-cta">
+<div class="col-sm-6 offset-sm-3 col-10 offset-1" id="cta">
+            Hire me. Via
+            <a href="<?php echo home_url('/contact-me'); ?>">digital</a> or over coffee ☕ 
+        </div></div>
 
-writing archive! </div><div class="row">
-<?php echo category_description(); ?>
+<hr>
+<div class="row">
 
         <?php 
     
@@ -32,10 +36,7 @@ writing archive! </div><div class="row">
 
                 <div class="awsr-gallery-title" style="background-color: white; text-transform: uppercase; font-family:raleway; font-weight: 500;">
 
-                    <small style="color: grey;">
-                        <?php the_time('j/n/Y'); ?>
-                    </small>
-                    <br>
+                    
                     <small>
                         <?php the_title(); ?>
                         <br>
@@ -44,6 +45,13 @@ writing archive! </div><div class="row">
                 </div>
                 <!-- .awsr-gallery-title -->
         </a>
+
+ <div >
+                        <small>
+                            <?php the_excerpt(); ?>
+                        </small>
+                        <hr>
+                    </div>
 
         </div>
         <!-- .col -->
