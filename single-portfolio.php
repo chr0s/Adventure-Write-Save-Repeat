@@ -14,6 +14,8 @@
 
 <div class="row">
 
+<?php echo category_description(); ?>
+
     <?php 
 
     // The query, checks name of category

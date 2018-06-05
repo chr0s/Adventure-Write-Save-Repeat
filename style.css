@@ -205,19 +205,21 @@ hr#blog {
     z-index: -1;
 }
 
+
 .awsr-front-grid {
-    text-align: center;
-    height: auto;
-} 
-
-
+    flex:1;
+    background-repeat: no-repeat; 
+    background-size: contain; 
+}
 
 .awsr-front-grid-right {
     text-align: left;
+    background-position: left;
 }
 
 .awsr-front-grid-left {
     text-align: right;
+    background-position: right;
 }
 
 /* Header */
@@ -631,9 +633,7 @@ img.size-full {
         #writer:hover:after {
             background-image: none;
         }
-        .awsr-front-grid {
-            height: auto;
-        }
+    
         .awsr-background,
         .awsr-image-to-fix {
             display: none;
