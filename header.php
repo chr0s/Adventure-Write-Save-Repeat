@@ -23,6 +23,8 @@
 
     </script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <?php
 #twitter cards hack
 if(is_single() || is_page()) {

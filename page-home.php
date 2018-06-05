@@ -7,14 +7,14 @@
  get_header(); ?>
 
     <div class="row" style="padding-top:10vh" >
-        <div id="writer" class="awsr-front-grid awsr-front-grid-left col-md-6 ">
+        <div id="writer" class="awsr-front-grid awsr-front-grid-left col-md-6 "  style="background-repeat: no-repeat; background-size: contain; background-position: right;">
             <h1>
                 <small>A freelance &nbsp;</small><a href="<?php echo home_url('/a-writer'); ?>">writer</a>
             </h1>
 
             <p>
 
-                <div id="home-border-left" >
+                <div id="home-border-left">
                     <span style="background-color:whitesmoke;">
                         <h3 id="home">Words to make your business 💥 pop 💥</h3>
                         <br>Reliable, speedy, &amp; experienced
@@ -27,14 +27,14 @@
             </div>
         </div>
 
-        <div id="web-designer" class="awsr-front-grid awsr-front-grid-right col-md-6 ">
+        <div id="web-designer" class="awsr-front-grid awsr-front-grid-right col-md-6 "style="background-repeat: no-repeat; background-size: contain; background-position: left;">
             <h1 id="home">
                 <small>&amp; </small><a href="<?php echo home_url('/a-web-designer'); ?>">web designer</a>
 
             </h1>
             </p>
 
-            <div id="home-border-right" >
+            <div id="home-border-right"  >
                 <span style="background-color:whitesmoke;">
                     <h3 id="home">web presences that 🎶 sing 🎶</h3>
                     <span style="background-color:whitesmoke;">
@@ -58,5 +58,25 @@
     </div>
 
 </div>
+
+<script>
+$('#writer').mouseover(function() {
+   $('#web-designer').css("background-image", "url('http://localhost/chris/wp-content/uploads/2017/10/Typewriter-1.png')");
+   $('#home-border-right').css("display", "none"); // change css
+});
+$('#writer').mouseleave(function() {
+   $('#web-designer').css("background-image", "none"); // change back css as it was
+   $('#home-border-right').css("display", "block");
+});
+
+$('#web-designer').mouseover(function() {
+   $('#writer').css("background-image", "url('https://kristinabogle26.files.wordpress.com/2012/04/safesurfing.jpeg')");
+   $('#home-border-left').css("display", "none"); // change css
+});
+$('#web-designer').mouseleave(function() {
+   $('#writer').css("background-image", "none"); // change back css as it was
+   $('#home-border-left').css("display", "block");
+});
+</script>
 
     <?php get_footer(); ?>
