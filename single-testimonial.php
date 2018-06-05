@@ -2,8 +2,11 @@
 
 <!-- Start of the post info -->
 
-<div class="awsr-content-testimonial">
-    <img style="width: 100px; border: 1px solid #ffb600; border-radius: 50px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+<!--<div class="awsr-content-testimonial"> -->
+     
+ <div class="container" id="awsr-content">
+
+<img style="width: 100px; border: 1px solid #ffb600; border-radius: 50px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
     <h3 style="display: inline; margin-left: 20px;">
         <?php the_title(); ?>
     </h3>

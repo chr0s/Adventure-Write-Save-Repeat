@@ -78,6 +78,17 @@ a:active {
     font-weight: 700;
 }
 
+#cta a,
+#cta a:link,
+#cta a:visited {
+    color: #ffd05d;
+}
+
+#cta a:hover,
+#cta a:active {
+    color: #FFDD87;
+}
+
 h1 {
     text-transform: uppercase;
 	font-size: 32px;
@@ -577,8 +588,9 @@ img.size-full {
 
 #cta {
     z-index: 5; 
+    box-shadow: 0.5px 0.5px 0.5px #5faeec;
     border-radius:10px;
-    border: 2px solid white;
+    border: 3px solid whitesmoke;
     background-color: #5faeec; 
     color: white; 
     padding: 10px; 
@@ -596,12 +608,33 @@ img.size-full {
 
 #employablecolor {color: whitesmoke;}
 
+#right-point {display: inline-block;}
+#down-point {display:none;}
+
+/* Contact form stuff */
+
+.wpcf7-form input, .wpcf7-form textarea, label {width: 100%;}
+
+.wpcf7-form input:focus, .wpcf7-form textarea:focus {outline-color: #ffd05d; outline-style: double;}
+
+span.wpcf7-not-valid-tip {font-size: 0.8em;}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ng, div.wpcf7-aborted {border: 2px solid #ff0000; font-size: 0.8em;}
+
 /* Responsive */
+
+
+@media screen and (max-width: 991.98px) {
+
+    #right-point {display:none}
+    #down-point {display: inline-block}
+}
 
 @media screen and (max-width: 800px) {
     .the-content {
         margin-left: 0px;
         width: 90vw;
+        max-width:100%;
         padding: 0px 2vw;
     }
 
@@ -618,7 +651,9 @@ img.size-full {
     #sticky-cta {
         top: 100px;
     }
+
 }
+
 
 @media screen and (max-width: 767.98px) {
     body.awsr-home .container-fluid {
@@ -701,4 +736,6 @@ img.size-full {
     #responsivehidden {display:block;}
     
     #employablecolor {color: darkslategrey;}
+
+   
 	}

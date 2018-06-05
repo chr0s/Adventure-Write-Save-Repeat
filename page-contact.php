@@ -26,28 +26,25 @@
 
 		If you're looking for a <strong>good</strong>, <strong>reliable</strong>, and <strong>cost-effective</strong> <a href="https://chrislee.is/a-writer/">freelance writer</a> or <a href="https://chrislee.is/a-web-designer">web designer</a></strong>, get in touch.<p>
 
-If you're looking for <strong>help planning your own cycling adventure, especially across Canada</strong>, definitely get in touch!<p>
-
-Email: <strong><a href="mailto:hi@chrislee.is">hi@chrislee.is</a></strong><p>
-
-Social media: <span style="font-size: larger;"><strong><a id="social" href="http://instagram.com/chrislee.is" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></strong>
-<strong><a id="social" href="https://twitter.com/chrisleeis" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></strong>
-<strong><a id="social" href="https://www.linkedin.com/in/chrisleeis/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></strong>
-<strong><a id="social" href="https://github.com/chr0s/" target="_blank"><i class="fab fa-github-square"></i></a></strong></span>
 			</div><!-- col --> 
             </div><!-- row -->
 
         <div class="row">
-			<hr>
+			
+<div class="col-lg-4">
 
-            <div class="col-lg-6">
+<p>Email: <strong><a href="mailto:hi@chrislee.is">hi@chrislee.is</a></strong></p>
 
-                <?php echo $post->post_content; ?>
+<p>Social: <span style="font-size: larger;"><strong><a id="social" href="http://instagram.com/chrislee.is" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></strong>
+<strong><a id="social" href="https://twitter.com/chrisleeis" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></strong>
+<strong><a id="social" href="https://www.linkedin.com/in/chrisleeis/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></strong>
+<strong><a id="social" href="https://github.com/chr0s/" target="_blank"><i class="fab fa-github-square"></i></a></strong></span></p>
 
-            </div>
-            <!-- .col-6 -->
+Form: <div id="right-point">👉</div><div id="down-point">👇</div>
+</div>
+          
 
-            <div class="col-lg-6">
+            <div class="col-lg-8">
 
                 <?php echo do_shortcode('[contact-form-7 id="1780" title="Contact page"]'); ?>
 

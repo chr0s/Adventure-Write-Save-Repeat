@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
-<div class="awsr-background" style="background-color: #FFD264;"></div>
-
-<div class="awsr-content" style="top: 35vh;">
+ <div class="container" id="awsr-content">
     <div class="awsr-postTitle">
-        <h2>Search results</h2>
+        <h2>Search results 🕵️</h2>
     </div>
 
     <?php
@@ -67,7 +65,7 @@ if ( $the_query->have_posts() ) :
         <?php wp_reset_postdata(); ?>
 
         <?php else : ?>
-        <p>Hmm, nothing found unfortunately! Head to
+        <p>Hmm, nothing found unfortunately!<p> Head to
             <a href="<?php echo home_url(); ?>">the home page</a> or
-            <a href="<?php echo home_url('/blog'); ?>">the blog</a>!</p>
+            <a href="<?php echo home_url('/thinking-about'); ?>">the blog</a>.</p>
         <?php endif; ?>

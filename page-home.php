@@ -51,7 +51,7 @@
 </div>
     </div>
     <div class="row" id="work-together">
-        <div class="col-sm-6 offset-sm-3 col-10 offset-1" style="background-color: #5faeec; border-radius:10px; color: white; padding: 10px; text-align:center;">
+        <div class="col-sm-6 offset-sm-3 col-10 offset-1" id="cta">
             Want to work together? Let's chat,
             <a href="<?php echo home_url('/contact-me'); ?>">digitally</a> or over coffee ☕ 
         </div>
@@ -70,7 +70,7 @@ $('#writer').mouseleave(function() {
 });
 
 $('#web-designer').mouseover(function() {
-   $('#writer').css("background-image", "url('https://kristinabogle26.files.wordpress.com/2012/04/safesurfing.jpeg')");
+   $('#writer').css("background-image", "url('http://localhost/chris/wp-content/uploads/2018/06/surfing-the-web.png')");
    $('#home-border-left').css("opacity", "0"); // change css
 });
 $('#web-designer').mouseleave(function() {

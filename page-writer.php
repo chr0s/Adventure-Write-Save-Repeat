@@ -44,7 +44,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-12">
 
-                <h3>What people say about my writing.</h3>
+                <h3>Testimonials.</h3>
 
                 <?php 
 
