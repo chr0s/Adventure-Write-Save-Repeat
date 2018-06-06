@@ -12,7 +12,6 @@
 
     <div class="row">
 
-test text
 <?php echo category_description(); ?>
 
         <?php 
@@ -24,15 +23,15 @@ test text
         <!-- Start of the featured image -->
 
         <a href="<?php the_permalink(); ?>">
-            <div class="col-md-4 awsr-gallery-tile" style="height: auto;">
+            <div class="col-md-4 awsr-gallery-tile">
 
                 <img class="awsr-gallery-img" src="<?php the_post_thumbnail_url('169-gallery'); ?>">
 
                 <!-- Start of the post info -->
 
-                <div class="awsr-gallery-title" style="background-color: white; text-transform: uppercase; font-family:raleway; font-weight: 500;">
+                <div class="awsr-gallery-title">
 
-                    <small style="color: grey;">
+                    <small id="awsr-archive-date">
                         <?php the_time('j/n/Y'); ?>
                     </small>
                     <br>

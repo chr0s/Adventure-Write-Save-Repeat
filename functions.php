@@ -386,7 +386,7 @@ function jt_cmb2_get_file_list_images( $writing_gallery, $img_size = 'xs-wide' )
 	// Loop through them and output an image
 	foreach ( (array) $files as $attachment_id => $attachment_url ) {
 		$images .= '<div class="col-sm-12 col-md-6 ">';
-		$images .= wp_get_attachment_image( $attachment_id, $img_size, false, 'style=height:auto;border: solid 1px darkslategrey; margin:5px; max-width:360px;' );
+		$images .= wp_get_attachment_image( $attachment_id, $img_size, false, 'id=awsr-file-list-gallery' );
 		$images .= '</div>';
 	}
 	return $images ? '<div class="row">' . $images . '</div>' : '';

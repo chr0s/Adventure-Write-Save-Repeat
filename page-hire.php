@@ -6,13 +6,15 @@
 
  get_header(); ?>
 
-</div><!-- container-fluid -->
+    </div>
+    <!-- container-fluid -->
 
-<?php $filter = get_post_meta(get_the_ID(), 'filter', true); ?>
+    <?php $filter = get_post_meta(get_the_ID(), 'filter', true); ?>
 
-<div class="container-fluid" style="width: 100vw; max-width: 100%; padding: 0px; border-bottom: 1px solid #ffb600; "" >
+    <div class="container-fluid" id="awsr-blog-hero-container">
 
-    <?php 
+
+        <?php 
     
         if( have_posts() ):
     
@@ -21,69 +23,41 @@
 
 
 
-        <img style="filter: <?php echo $filter; ?>;  
-  object-fit: cover;
-  width: 100vw;
-  max-width: 100%;
-  max-height:80vh;
-  left: 0;
-  top: 0;" class="background" src="http://localhost/chris/wp-content/uploads/2016/01/ezgif.com-gif-maker.gif">
+        <!-- hero image: style tag required for PHP call which applies filter, whose value is determined via post-specifc custom field entry -->
 
-   
-</div>    <!-- top-container -->
+        <img id="awsr-blog-hero-image" style="filter: <?php echo $filter; ?>;" src="<?php the_post_thumbnail_url('full'); ?>
+        ">
 
-    <div class="awsr-new-title-to-fix" style="background-color: transparent;
-  position: absolute;
-  bottom: 3rem;
-  width: auto;
-  max-width: calc(100% - 10px - 10px - 4px);
-  height: auto;
-  text-shadow: 0 1px 2px rgba(18,31,31,.6);
-  padding: 0 2em;">
+    </div>
+    <!-- awsr-blog-hero-container -->
 
-        <h2 id="awsr-single-title-resp" style="font-size: 60px;
-  font-weight: 700;
-  color: white;
-  word-wrap: break-word;
-  font-family: raleway;
-  text-transform: uppercase;
-  text-shadow: 3px 3px 6px rgba(18,31,31,0.8);">
+    <div id="awsr-single-title-container">
+
+        <h2 id="awsr-single-title">
 
             <?php the_title(); ?>
 
-        </h2><span id="employablecolor"><?php the_content(); ?></span>
+
+        </h2>
 
     </div>
-    <!-- .title -->
+    <!-- awsr-single-title-container -->
 
-</div>
-<!-- .top-container -->
+    <div class="container" id="awsr-content">
 
-<!-- <div class="bottom-container" style="
-  width: 100vw;
-  max-width: 100%;
-  position: relative;
-  z-index: 1;
-  height: 100%; background-color: white; border-top: 1px solid #ffb600;">
-
-
-
-
-
-    <div class="content"> -->
-
-    <div class="container" id="responsivehidden" style="background-color:white;">
-
-        <div class="awsr-single-title-resp">
-            <h2 id="awsr-single-title-resp">
-           <?php the_title(); ?>
-            </h2><?php the_content(); ?>
+        <div id="awsr-single-title-resp">
+            <h2>
+                <?php the_title(); ?>
+            </h2>
         </div>
 
-        
-        <?php if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					} ?>
+        <h4>
+
+            <?php the_tags( 'Part of a series about ' ); ?>
+
+        </h4>
+
+        <?php the_content(); ?>
 
         <?php endwhile;
 
@@ -93,7 +67,7 @@
 
     </div>
     <!-- .content -->
-</div>
-<!-- .bottom-container -->
+    </div>
+    <!-- .bottom-container -->
 
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

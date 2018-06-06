@@ -2,12 +2,14 @@
 
 <!-- <div class="awsr-background" style="background-color: whitesmoke;"></div> -->
 
-<div class="container" >
+<div class="container" id="awsr-content" >
 
     <h2>The blog</h2>
 
+    <div id="awsr-tags">I write about the following things:<p>
+
     <?php $tags = get_tags();
-$html = '<div class="awsr-tags">';
+$html = '<div >';
 foreach ( $tags as $tag ) {
 	$tag_link = get_tag_link( $tag->term_id );
 			
@@ -17,7 +19,7 @@ foreach ( $tags as $tag ) {
 $html .= '<hr></div>';
 echo $html; ?>
 
-
+</div>
 
 
     <?php 
@@ -30,10 +32,10 @@ echo $html; ?>
 
     <div class="row">
 
-        <div class="col-sm-4" style="padding-bottom: 20px;">
+        <div class="col-sm-4">
 
             <a href="<?php the_permalink(); ?>">
-                <img style="opacity: 0.9;" class="awsr-gallery-img" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                <img id="awsr-blog-thumb" src="<?php the_post_thumbnail_url('small-wide'); ?>">
             </a>
 
         </div>
@@ -42,7 +44,7 @@ echo $html; ?>
         <div class="col-sm-8">
 
             <a href="<?php the_permalink(); ?>">
-                <h2 class="awsr-index-title">
+                <h2>
                     <?php the_title(); ?>
                 </h2>
             </a>

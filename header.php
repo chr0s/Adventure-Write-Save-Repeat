@@ -56,13 +56,7 @@ if(is_single() || is_page()) {
 
 </head>
 
-<!-- Checking whether we're on the home page -->
-
-
-
-<body <?php body_class( $awsr_classes ); ?> >
-
-        <!-- Initiate header -->
+<body>
 
         <div class="awsr-header" >
 
@@ -71,7 +65,7 @@ if(is_single() || is_page()) {
                 <div class="col-12">
                     <h1>
                         <a href="<?php echo home_url(); ?>">Chrislee
-                            <span style="font-size:26px;">.is</span>
+                            <span id="awsr-is">.is</span>
                         </a>
                     </h1>
                 </div>
@@ -83,7 +77,7 @@ if(is_single() || is_page()) {
         </div>
         <!-- .awsr-header -->
 
-        <div class="awsr-sub-header" style="position: sticky; top:0px;">
+        <div class="awsr-sub-header" >
 
             <div class="row">
 

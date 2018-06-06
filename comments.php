@@ -1,18 +1,5 @@
 <?php
-/**
- * The template for displaying Comments
- *
- * The area of the page that contains comments and the comment form.
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
 
-/*
- * If the current post is protected by a password and the visitor has not yet
- * entered the password we will return early without loading the comments.
- */
 if ( post_password_required() ) {
 	return;
 }
@@ -31,7 +18,7 @@ $fields =  array(
 
 $comments_args = array(
         
-        // Reference fields aboe
+        // Reference fields above
         'fields' =>  $fields,
         // change the title of send button 
         'label_submit'=>'Submit',
@@ -39,8 +26,8 @@ $comments_args = array(
         'title_reply'=>'',
         // remove "Text or HTML to be displayed after the set of comment fields"
         'comment_notes_after' => '',
-	// Change note
-	'comment_notes_before' => '',
+        // Change note
+        'comment_notes_before' => '',
         // redefine your own textarea (the comment body)
         'comment_field' => '<label for="comment">' . _x( '<h4>Leave a comment:</h4>', 'noun' ) . '</label><textarea id="comment" name="comment" aria-required="true" style="width:100%;"></textarea></p>',
      

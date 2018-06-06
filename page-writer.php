@@ -6,12 +6,6 @@
 
  get_header(); ?>
 
-    <!-- <div class="awsr-background" style="background-image: url('<?php the_post_thumbnail_url('full'); ?>');"></div> -->
-
-    <!-- <div class="awsr-background-resp">
-        <img style="width: 100vw; height: auto; padding:0px; margin:0px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
-    </div> -->
-
     <div class="container" id="awsr-content" >
         <h2>WORDS TO MAKE YOUR BUSINESS 💥 POP 💥</h2>
         <div class="row">
@@ -62,7 +56,7 @@
                     <div class="col-sm-3">
 
                        
-                            <img style="width: 80px; max-width: 100%; border: 1px solid darkslategrey; border-radius: 40px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                            <img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('small-wide'); ?>">
                        
                         <br>
 
@@ -75,7 +69,6 @@
                         </h4><p>
                         <small><?php the_excerpt(); ?></small>
                         
-                            <!-- <h4>- <a href="<?php the_permalink(); ?>">Read full testimonial</a></h4> -->
                             <hr>
                     </div>
                     <!-- col -->
@@ -117,13 +110,13 @@
                     <!-- Start of the featured image -->
 
                     <a href="<?php the_permalink(); ?>">
-                        <div class="col-sm-12 awsr-gallery-tile" style="height: auto;">
+                        <div class="col-sm-12" id="awsr-portfolio-container" >
 
-                            <img class="awsr-gallery-img" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                            <img id="awsr-portfolio-thumb" src="<?php the_post_thumbnail_url('small-wide'); ?>">
 
                             <!-- Start of the post info -->
 
-                            <div class="awsr-gallery-title" style="background-color: white;">
+                            <div class="awsr-gallery-title">
 
                                 <h4>
                                     <?php the_title(); ?>
@@ -135,7 +128,7 @@
                     </a>
 
                     <div >
-                        <small style="text-align:right;">
+                        <small id="awsr-writer-blurb">
                             <?php the_excerpt(); ?>
                         </small>
                         <hr>
@@ -161,7 +154,7 @@
 
                 <h3>Clients.</h3>
 
-                <small>As a freelance writer.</small>
+                <small>As a freelance writer.</small><p>
 
                 <div class="row">
 
@@ -179,13 +172,13 @@
 
                     <!-- Start of the featured image -->
 
-                    <div class="col-4 col-sm-6 awsr-gallery-tile" style="height: auto;">
-
-                        <img class="awsr-gallery-img" style="height:50px; max-height:50px; width: auto;border: none;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
-
+                    <div class="col-4 col-sm-6 awsr-gallery-tile" >
+<div id="awsr-portfolio-client-image-wrapper">
+                        <img id="awsr-portfolio-client-image"  src="<?php the_post_thumbnail_url('small-wide'); ?>">
+    </div>
                         <!-- Start of the post info : copy and paste from prev section if needed again -->
 
-                        <div class="awsr-ride-blurb" style="border-bottom: 0px;">
+                        <div class="awsr-ride-blurb" >
                             <small>
                                 <?php the_excerpt(); ?>
                             </small>
@@ -202,10 +195,10 @@
 
                 </div>
                 <!-- .row -->
-
+                <small>Through agencies.</small><p>
                 <div class="row">
 
-                    <small>Through agencies.</small>
+                 
 
                 </div>
                 <!-- .row -->
@@ -227,12 +220,12 @@
                     <!-- Start of the featured image -->
 
                     <div class="col-4 col-sm-6 awsr-gallery-tile"  >
-
-                        <img class="awsr-gallery-img" style="height:50px; max-height:50px; width: auto;border: none;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
-
+                    <div id="awsr-portfolio-client-image-wrapper">
+                        <img id="awsr-portfolio-client-image" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+    </div>
                         <!-- Start of the post info : copy and paste from prev section if needed again -->
 
-                        <div class="awsr-ride-blurb" style="border-bottom: 0px;">
+                        <div class="awsr-ride-blurb">
                             <small>
                                 <?php the_excerpt(); ?>
                             </small>

@@ -6,16 +6,6 @@
 
  get_header(); ?>
 
-    <!-- Start of the loop -->
-
-    <div class="awsr-background" style="background-image: url('<?php the_post_thumbnail_url('full'); ?>');"></div>
-
-    <div class="awsr-background-resp">
-        <img style="width: 100vw; height: auto; padding:0px; margin:0px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
-    </div>
-
-    <!-- Start of the post info -->
-
     <div class="container" id="awsr-content">
 
         <h2><?php the_title(); ?></h2>
@@ -35,12 +25,12 @@
 
 <p>Email: <strong><a href="mailto:hi@chrislee.is">hi@chrislee.is</a></strong></p>
 
-<p>Social: <span style="font-size: larger;"><strong><a id="social" href="http://instagram.com/chrislee.is" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></strong>
+<p>Social: <span id="awsr-social-icons"><strong><a id="social" href="http://instagram.com/chrislee.is" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></strong>
 <strong><a id="social" href="https://twitter.com/chrisleeis" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></strong>
 <strong><a id="social" href="https://www.linkedin.com/in/chrisleeis/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></strong>
 <strong><a id="social" href="https://github.com/chr0s/" target="_blank"><i class="fab fa-github-square"></i></a></strong></span></p>
 
-Form: <div id="right-point">👉</div><div id="down-point">👇</div>
+Form: <div id="right-point">👉</div><div id="down-point">👇</div><p>
 </div>
           
 

@@ -28,13 +28,13 @@ If you like the look of these writings and fancy one for yourself, click the big
         <!-- Start of the featured image -->
 
         <a href="<?php the_permalink(); ?>">
-            <div class="col-md-4 awsr-gallery-tile" style="height: auto;">
+            <div class="col-md-4" id="awsr-portfolio-container">
 
-                <img class="awsr-gallery-img" src="<?php the_post_thumbnail_url('169-gallery'); ?>">
+                <img id="awsr-portfolio-thumb"  src="<?php the_post_thumbnail_url('169-gallery'); ?>">
 
                 <!-- Start of the post info -->
 
-                <div class="awsr-gallery-title" style="background-color: white; text-transform: uppercase; font-family:raleway; font-weight: 500;">
+                <div class="awsr-gallery-title" >
 
                     
                     <small>

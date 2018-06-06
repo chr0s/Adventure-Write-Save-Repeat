@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="awsr-background" style="background-image: url('<?php echo home_url('/wp-content/uploads/2018/01/Wally404.jpg'); ?>');"></div>
+<div class="awsr-background" ></div>
 
-<div class="awsr-content-404" style="background-color: white;">
+<div class="awsr-content-404" >
 
     <p>
         <h2>Nothing here!</h2>
