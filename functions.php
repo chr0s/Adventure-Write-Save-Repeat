@@ -150,7 +150,7 @@ function awsr_custom_posts() {
                 'excerpt',
                 'thumbnail', // featured image
                 'revisions',
-                'custom-fields', // automatically saves prior versions
+                //'custom-fields', // automatically saves prior versions
                 ), //which parts of the edit screen get shown
             'taxonomies'          =>  array('category', 'post_tags'),
             'menu_position'         =>  7,
@@ -269,6 +269,7 @@ add_action('init', 'awsr_custom_posts');
 // GALLERY POST THUMBNAILS
 
 add_image_size( 'small-wide', 720, 405, false);
+add_image_size( 'xs-wide', 360, 202, false);
 
 // SIDEBAR 
 
@@ -321,85 +322,72 @@ function insert_fb_in_head() {
 }
 add_action( 'wp_head', 'insert_fb_in_head', 5 );
 
-// code from StackOverflow to add custom fields to custom post types
+// Here be CMB2 meta boxes
 
-function member_add_meta_box() {
-    //this will add the metabox for the member post type
-    $screens = array( 'writing' );
+add_action( 'cmb2_admin_init', 'cmb2_writing' );
+/**
+ * Define the metabox and field configurations.
+ */
+function cmb2_writing() {
+
+	// Start with an underscore to hide fields from custom fields list
+	$prefix = '_awsr-writing-meta_';
+
+	/**
+	 * Initiate the metabox
+	 */
+	$cmb = new_cmb2_box( array(
+		'id'            => 'awsr-writing-info',
+		'title'         => __( 'Writing info', 'cmb2' ),
+		'object_types'  => array( 'writing', ), // Post type
+		'context'       => 'advanced',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		// 'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Brief
+	$cmb->add_field( array(
+		'name'       => 'Writing Brief',
+		'id'         => 'writing_brief',
+		'type'       => 'wysiwyg',
+    ) );
     
-    foreach ( $screens as $screen ) {
-    
-        add_meta_box(
-            'member_sectionid',
-            __( 'Member Details', 'member_textdomain' ),
-            'member_meta_box_callback',
-            $screen
-        );
-     }
+    // Results
+    $cmb->add_field( array(
+		'name'       => 'Writing Results',
+		'id'         => 'writing_results',
+		'type'       => 'wysiwyg',
+    ) );
+
+    // Gallery
+    $cmb->add_field( array(
+		'name'       => 'Writing Gallery',
+		'id'         => 'writing_gallery',
+		'type'       => 'file_list',
+    ) );    
+
     }
-    add_action( 'add_meta_boxes', 'member_add_meta_box' );
+    // Add other metaboxes as needed
+   
     
-    /**
-     * Prints the box content.
-     *
-     * @param WP_Post $post The object for the current post/page.
-     */
-    function member_meta_box_callback( $post ) {
-    
-    // Add a nonce field so we can check for it later.
-    wp_nonce_field( 'member_save_meta_box_data', 'member_meta_box_nonce' );
-    
-    /*
-     * Use get_post_meta() to retrieve an existing value
-     * from the database and use the value for the form.
-     */
-    $value = get_post_meta( $post->ID, '_my_meta_value_key', true );
-    
-    echo '<label for="member_new_field">';
-    _e( 'Phone Number', 'member_textdomain' );
-    echo '</label> ';
-    echo '<input type="text" id="member_new_field" name="member_new_field" value="' . esc_attr( $value ) . '" size="25" />';
-    }
-    
-    /**
-     * When the post is saved, saves our custom data.
-     *
-     * @param int $post_id The ID of the post being saved.
-     */
-     function member_save_meta_box_data( $post_id ) {
-    
-     if ( ! isset( $_POST['member_meta_box_nonce'] ) ) {
-        return;
-     }
-    
-     if ( ! wp_verify_nonce( $_POST['member_meta_box_nonce'], 'member_save_meta_box_data' ) ) {
-        return;
-     }
-    
-     if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
-        return;
-     }
-    
-     // Check the user's permissions.
-     if ( isset( $_POST['post_type'] ) && 'page' == $_POST['post_type'] ) {
-    
-        if ( ! current_user_can( 'edit_page', $post_id ) ) {
-            return;
-        }
-    
-     } else {
-    
-        if ( ! current_user_can( 'edit_post', $post_id ) ) {
-            return;
-        }
-     }
-    
-     if ( ! isset( $_POST['member_new_field'] ) ) {
-        return;
-     }
-    
-     $my_data = sanitize_text_field( $_POST['member_new_field'] );
-    
-     update_post_meta( $post_id, '_my_meta_value_key', $my_data );
-    }
-    add_action( 'save_post', 'member_save_meta_box_data' );
+// CMB2 code to retrieve image gallery
+
+
+function jt_cmb2_file_list_images( $writing_gallery, $img_size = 'xs-wide' ) {
+	echo jt_cmb2_get_file_list_images( $writing_gallery, $img_size );
+}
+
+function jt_cmb2_get_file_list_images( $writing_gallery, $img_size = 'xs-wide' ) {
+	// Get the list of files
+	$files = get_post_meta( get_the_ID(), $writing_gallery, 1 );
+	$images = '';
+	// Loop through them and output an image
+	foreach ( (array) $files as $attachment_id => $attachment_url ) {
+		$images .= '<div class="col-sm-12 col-md-6 ">';
+		$images .= wp_get_attachment_image( $attachment_id, $img_size, false, 'style=height:auto;border: solid 1px darkslategrey; margin:5px; max-width:360px;' );
+		$images .= '</div>';
+	}
+	return $images ? '<div class="row">' . $images . '</div>' : '';
+}

@@ -11,26 +11,64 @@
         <?php the_title(); ?>
     </h2>
 
-
     <?php 
     
     if( have_posts() ):
     
         while( have_posts() ): the_post(); ?>
 
+        <?php the_content(); ?>
+
+        <hr>
+
+<!-- 
+    Brief field
+        -->
+
 <div class="row">
-    <div class="col-sm-1 offset-sm-1" style="text-transform:uppercase;"><strong>Brief</strong></div>
-    <div class="col-sm-10"><?php the_content(); ?></div>
+<div class="col-md-1"><h3>Brief.</h3></div>
+    <div class="col-md-10 offset-md-1">
+            <?php
+        // Grab the metadata from the database
+        $writing_brief = wpautop(get_post_meta( get_the_ID(), 'writing_brief', true ));
+
+        // Echo the metadata
+        echo ( $writing_brief );
+        ?><hr>
+</div>
+
+<!-- 
+    Results field 
+        -->
+
 </div>
 <div class="row">
-    <div class="col-sm-1 offset-sm-1" style="text-transform:uppercase;"><strong>Image</strong></div>
-    <div class="col-sm-10"><img style="border: 1px darkslategrey solid; width: 400px; max-width:100%;" src="<?php the_post_thumbnail_url('full'); ?>"></div>
+<div class="col-md-1"><h3>Results.</h3></div>
+    <div class="col-md-10 offset-md-1">
+            <?php
+        // Grab the metadata from the database
+        $writing_results = wpautop( get_post_meta( get_the_ID(), 'writing_results', true ) );
+
+        // Echo the metadata
+        echo ( $writing_results );
+        ?>    <hr>
+    </div>
 </div>
 
-    
+<!-- 
+    Gallery field 
+        --> 
 
+<div class="row">
+<div class="col-md-1"><h3>Gallery.</h3></div>
+    <div class="col-md-10 offset-md-1">
+       <?php jt_cmb2_file_list_images( 'writing_gallery', 'xs-wide' );?>
+    </div>
+</div>
 
-
+<!-- 
+    End of table
+        -->
 
 </div>
 <!-- .awsr-content -->
@@ -40,5 +78,7 @@
     endif;
 
     ?>
+
+
 
 <?php get_footer(); ?>
