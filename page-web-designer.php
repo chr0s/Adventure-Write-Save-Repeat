@@ -76,6 +76,8 @@
 
                         <h3>Portfolio.</h3>
 
+                        <small>Click to see more project info.</small>
+
                         <div class="row">
 
                             <?php 
@@ -92,25 +94,28 @@
 
                             <!-- Start of the featured image -->
 
-                            <div class="col-sm-12 awsr-gallery-tile" style="height: auto;">
+                            <a href="<?php the_permalink(); ?>">
+                        <div class="col-sm-12" id="awsr-portfolio-container" >
 
-                                <img  id="awsr-blog-thumb" class="awsr-gallery-img awsr-portfolio-img" style="filter: grayscale(60%);" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                            <img id="awsr-portfolio-thumb" src="<?php the_post_thumbnail_url('small-wide'); ?>">
 
-                                <!-- Start of the post info -->
+                            <!-- Start of the post info -->
 
-                                <div class="awsr-gallery-title" style="background-color: white;">
+                            <div class="awsr-gallery-title">
 
-                                    <h4>
-                                        <?php the_title(); ?>
-                                        <br>
-                                    </h4>
+                                <h4>
+                                    <?php the_title(); ?>
+                                    <br>
+                                </h4>
 
-                                </div>
+                            </div>
+                            <!-- .awsr-gallery-title -->
+                    </a>
                                 <!-- .awsr-gallery-title -->
 
                                 <div class="awsr-ride-blurb">
                                     <small>
-                                        <?php the_content(); ?>
+                                        <?php the_excerpt(); ?>
                                     </small>
                                 </div>
 

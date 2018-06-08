@@ -28,7 +28,7 @@
         </div>
 
         <div id="web-designer" class="awsr-front-grid awsr-front-grid-right col-md-6">
-            <h1 id="home">
+            <h1 >
                 <small>&amp; </small>
                 <a href="<?php echo home_url('/a-web-designer'); ?>">web designer</a>
 

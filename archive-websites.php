@@ -4,16 +4,13 @@
 
 <div class="container" id="awsr-content">
 
-<h2>My writing portfolio</h2> <p>
+<h2>Portfolio of websites</h2> <p>
 
-An ever-growing gallery of my published writing. If the descriptions aren't juicy enough for you, click the image for more detailed information about each project.<p>
-
-If you like the look of these writings and fancy one for yourself, click the big blue button:
+[add]
 
 <div class="row" id="sticky-cta">
 <div class="col-sm-6 offset-sm-3 col-10 offset-1" id="cta">
-            Hire me. Via
-            <a href="<?php echo home_url('/contact-me'); ?>">digital</a> or over coffee ☕ 
+[add]
         </div></div>
 
 <hr>
@@ -75,4 +72,6 @@ If you like the look of these writings and fancy one for yourself, click the big
 <!-- .awsr-content-archive -->
 
 <!-- End of the loop -->
+
+
     <?php get_footer(); ?>

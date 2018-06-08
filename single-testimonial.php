@@ -1,13 +1,11 @@
 <?php get_header(); ?>
 
 <!-- Start of the post info -->
-
-<!--<div class="awsr-content-testimonial"> -->
      
  <div class="container" id="awsr-content">
 
-<img style="width: 100px; border: 1px solid #ffb600; border-radius: 50px;" src="<?php the_post_thumbnail_url('small-wide'); ?>">
-    <h3 style="display: inline; margin-left: 20px;">
+<img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+    <h3 id="awsr-testimonial-margin">
         <?php the_title(); ?>
     </h3>
 
@@ -17,7 +15,7 @@
     
         while( have_posts() ): the_post(); ?>
 
-    <div class="the-content" id="testimonial">
+    <div class="the-content">
         <?php the_content(); ?>
     </div>
 

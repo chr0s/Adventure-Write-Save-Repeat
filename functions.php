@@ -54,40 +54,6 @@ add_theme_support('post-formats', array('aside', 'gallery'));
 
 function awsr_custom_posts() {
 
-    // Trips
-
-    $labels = array(
-        'name'      => 'Trips',
-        'singular'  => 'trip',
-        'add_new'   => 'Add trip',
-        'all_items' => 'All trips',
-    );
-
-    $args = array(
-        'labels'                => $labels,
-        'public'                => true,
-        'has_archive'           => true, 
-        'publicly_queryable'    => true,
-        'query_var'             => true,
-        'rewrite'               => array(
-	    'with_front' => false
-	    ),
-        'capability_type'       => 'post', // gives default settings of specified
-        'hierarchical'          => false, // dependencies on other items
-        'supports'               => array( 
-            'title',
-            'editor',
-            'excerpt',
-            'thumbnail', // featured image
-            'revisions', // automatically saves prior versions
-            ), //which parts of the edit screen get shown
-//        'taxonomies'          =>  array('category', 'post_tags'),
-        'menu_position'         =>  5,
-        'exclude_from_search'   =>  false,
-        );
-
-    register_post_type('trip', $args);
-
     // Testimonials
 
     $labels1 = array(
@@ -209,6 +175,7 @@ function awsr_custom_posts() {
             'publicly_queryable'    => true,
             'query_var'             => true,
             'rewrite'               => array(
+            'slug' => 'website-portfolio',
 	        'with_front' => false
 	        ),
             'capability_type'       => 'post', // gives default settings of specified
@@ -226,40 +193,6 @@ function awsr_custom_posts() {
             );
     
         register_post_type('websites', $args4);
-
-// Portfolio pages
-
-/*        $labels5 = array(
-            'name'      => 'Portfolio',
-            'singular'  => 'Portfolio',
-            'add_new'   => 'Add portfolio',
-            'all_items' => 'All portfolio',
-        );
-    
-        $args5 = array(
-            'labels'                => $labels5,
-            'public'                => true,
-            'has_archive'           => true, 
-            'publicly_queryable'    => true,
-            'query_var'             => true,
-            'rewrite'               => array(
-	        'with_front' => false
-	        ),
-            'capability_type'       => 'post', // gives default settings of specified
-            'hierarchical'          => false, // dependencies on other items
-            'supports'               => array( 
-                'title',
-                'editor',
-                'excerpt',
-                'thumbnail', // featured image
-                'revisions', // automatically saves prior versions
-                ), //which parts of the edit screen get shown
-            'taxonomies'          =>  array('category', 'post_tags'),
-            'menu_position'         =>  8,
-            'exclude_from_search'   =>  true,
-            );
-    
-        register_post_type('portfolio', $args5); */
 
 
 }

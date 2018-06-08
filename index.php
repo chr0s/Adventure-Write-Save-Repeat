@@ -48,7 +48,6 @@ echo $html; ?>
                     <?php the_title(); ?>
                 </h2>
             </a>
-            <br>
             <h4>
                 <?php the_time('j/n/Y'); ?>
                 <?php the_tags( '| #', '&nbsp;&nbsp;#', $after ); ?>

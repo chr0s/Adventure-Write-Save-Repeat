@@ -23,9 +23,9 @@
         <!-- Start of the featured image -->
 
         <a href="<?php the_permalink(); ?>">
-            <div class="col-md-4 awsr-gallery-tile">
+            <div class="col-md-4">
 
-                <img class="awsr-gallery-img" src="<?php the_post_thumbnail_url('169-gallery'); ?>">
+                <img src="<?php the_post_thumbnail_url('169-gallery'); ?>">
 
                 <!-- Start of the post info -->
 

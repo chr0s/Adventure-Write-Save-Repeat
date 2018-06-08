@@ -60,7 +60,7 @@
         </h4>
 
         <hr>
-        <div class="the-content">
+        <div id="awsr-single-content">
 
             <?php the_content(); ?>
 

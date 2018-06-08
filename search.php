@@ -1,9 +1,8 @@
 <?php get_header(); ?>
 
  <div class="container" id="awsr-content">
-    <div class="awsr-postTitle">
+   
         <h2>Search results 🕵️</h2>
-    </div>
 
     <?php
 global $query_string;
@@ -20,36 +19,33 @@ if ( $the_query->have_posts() ) :
 ?>
         <!-- the loop -->
 
-        <ul>
+        
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
             <div class="row">
 
-                <div class="col-lg-5 col-md-6" style="padding-bottom: 20px;">
+                <div class="col-sm-4">
 
                     <a href="<?php the_permalink(); ?>">
-                        <img class="awsr-gallery-img" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                        <img id="awsr-blog-thumb" src="<?php the_post_thumbnail_url('small-wide'); ?>">
                     </a>
 
                 </div>
                 <!-- col -->
 
-                <div class="col-lg-7 col-md-6">
+                <div class="col-sm-8">
 
                     <a href="<?php the_permalink(); ?>">
                         <h2>
                             <?php the_title(); ?>
                         </h2>
                     </a>
-                    <br>
-                    <strong>Type:</strong>
-                    <?php echo get_post_type(); ?>
-                    <br>
-                    <strong>Published on:</strong>
-                    <?php the_time('j/n/Y'); ?>
-                    <br>
+                    <h4> <?php the_time('j/n/Y'); ?></h4>
+                    
                     <?php the_excerpt(); ?>
-
+                    <h4>
+                <a href="<?php the_permalink(); ?>">Read more</a>
+            </h4>
                     <hr>
 
                 </div>

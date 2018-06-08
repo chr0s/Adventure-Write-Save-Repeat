@@ -9,10 +9,7 @@
 
 /* resets */
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     padding: 0px;
     margin: 0px;
     font-family: Raleway;
@@ -23,9 +20,7 @@ h2 {
 }
 
 blockquote {
-    color: #ffb600;
-    margin-right: 10%;
-    margin-left: 10%;
+    color: gray;
 }
 
 p {
@@ -34,8 +29,7 @@ p {
 
 /* CSS */
 
-html,
-body {
+html, body {
     margin: 0px;
     padding: 0px;
     color: black;
@@ -45,8 +39,6 @@ body {
 }
 
 body {
-    /*     height: 100%;
-        width: 100%; */
     color: darkslategray;
     background-size: cover;
     background-color: whitesmoke;
@@ -58,34 +50,24 @@ a {
     font-weight: 700;
 }
 
-a,
-a:link,
-a:visited {
+a, a:link, a:visited {
     color: #ffb600;
 }
 
-a:hover,
-a:active {
+a:hover, a:active {
     color: #ffc639;
 }
 
-.awsr-sub-header a,
-.awsr-sub-header a:link,
-.awsr-sub-header a:visited,
-.awsr-sub-header a:hover,
-.awsr-sub-header a:active {
+.awsr-sub-header a, .awsr-sub-header a:link, .awsr-sub-header a:visited, .awsr-sub-header a:hover, .awsr-sub-header a:active {
     color: white;
     font-weight: 700;
 }
 
-#cta a,
-#cta a:link,
-#cta a:visited {
+#cta a, #cta a:link, #cta a:visited {
     color: #ffd05d;
 }
 
-#cta a:hover,
-#cta a:active {
+#cta a:hover, #cta a:active {
     color: #FFDD87;
 }
 
@@ -109,14 +91,6 @@ h2 {
     text-transform: uppercase;
 }
 
-/*h2#awsr-single-title {
-    font-size: 45px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: whitesmoke;
-    line-height: 1.4;
-}*/
-
 h3 {
     text-transform: uppercase;
     font-size: 20px;
@@ -132,12 +106,6 @@ h3#home {
     font-weight: 600;
 }
 
-h3#blog {
-    margin-bottom: -25px;
-    margin-left: -40px;
-    font-size: 30px;
-}
-
 h4 {
     font-size: 14px;
     text-transform: uppercase;
@@ -145,10 +113,6 @@ h4 {
 }
 
 h4 a {
-    font-weight: 500;
-}
-
-#social {
     font-weight: 500;
 }
 
@@ -161,10 +125,6 @@ h4 a {
 ul.post-categories {
     display: inline;
     list-style-type: none;
-}
-
-.awsr-content-archive li {
-    display: inline;
 }
 
 hr.resp {
@@ -195,27 +155,13 @@ hr#blog {
 
 /* Home */
 
-/* #web-designer:hover + #writer {
-    content: url('https://kristinabogle26.files.wordpress.com/2012/04/safesurfing.jpeg');
-}  
-
-#writer:hover + #web-designer {
-    content: url('https://chrislee.is/wp-content/uploads/2017/10/Typewriter-1.png');
-} 
-
-*/
-
-#web-designer:hover:after,
-#writer:hover:after {
+#web-designer:hover:after, #writer:hover:after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    /*    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right bottom; */
     z-index: -1;
 }
 
@@ -237,11 +183,9 @@ hr#blog {
 
 /* Header */
 
-.awsr-header,
-.awsr-sub-header {
+.awsr-header, .awsr-sub-header {
     text-align: center;
     z-index: 5;
-    /*    position: fixed; */
     font-family: Raleway;
     text-transform: uppercase;
     width: 100vw;
@@ -292,40 +236,20 @@ hr#blog {
     font-size: 26px;
 }
 
-.awsr-header a,
-.awsr-header a:hover,
-.awsr-header a:active {
+.awsr-header a, .awsr-header a:hover, .awsr-header a:active {
     color: white;
     text-decoration: none;
 }
 
-.awsr-header ul,
-.awsr-sub-header ul {
+.awsr-header ul, .awsr-sub-header ul {
     list-style-type: none;
 }
 
-.awsr-header li,
-.awsr-sub-header li {
+.awsr-header li, .awsr-sub-header li {
     display: inline;
 }
 
-.thumbnail-img-single {
-    position: fixed;
-    top: 100px;
-    left: 0px;
-    background-size: cover;
-    z-index: 0;
-    width: 100vw;
-}
-
-.post-content-single {
-    position: absolute;
-    width: 100%;
-    top: 80vh;
-    background-color: white;
-}
-
-/* Search */
+/* Search - these aren't awsr but overwrite theme tags */
 
 .widgets-area input {
     padding: 2px 5px;
@@ -346,7 +270,6 @@ hr#blog {
 /* Single */
 
 .awsr-background {
-    /*     overflow: hidden; */
     height: 100%;
     width: 100%;
     position: fixed;
@@ -354,10 +277,6 @@ hr#blog {
     left: 0px;
     background-size: cover;
     background-position-y: center;
-}
-
-.awsr-background-resp {
-    display: none;
 }
 
 #awsr-single-title {
@@ -370,25 +289,11 @@ hr#blog {
     text-shadow: 3px 3px 6px rgba(18, 31, 31, 0.8);
 }
 
-/*.awsr-single-title {
-    position: absolute;
-    top: 65vh;
-    text-align: left;
-    color: whitesmoke;
-    z-index: 0;
-    max-width: 95vw;
-}*/
-
 #awsr-single-title-resp {
     display: none;
 }
 
-.awsr-content,
-.awsr-content-single,
-.awsr-content-archive,
-.awsr-content-404,
-.awsr-content-testimonial,
-.awsr-content-blank {
+.awsr-content, .awsr-content-404, {
     border-top: 1px solid #ffb600;
     z-index: 1;
     width: 100%;
@@ -414,18 +319,6 @@ hr#blog {
     top: 100vh;
 }
 
-.awsr-content {}
-
-.awsr-content-single {
-    top: 90vh;
-}
-
-.awsr-content-archive,
-.awsr-content-blank {
-    top: 100px;
-    border-bottom: 1px solid #ffb600;
-}
-
 .awsr-content-404 {
     top: 30vh;
     left: 35%;
@@ -442,34 +335,25 @@ hr#blog {
     border-bottom: 1px solid #ffb600;
 }
 
-.the-content {
+#awsr-single-content {
     margin-left: 50px;
     width: 750px;
     font-size: 18px;
 }
 
-#testimonial {
-    margin-left: 100px;
-}
-
 .awsr-ride-blurb {
     margin-left: 5px;
-    border-bottom: solid 1px #ffb600;
     width: 80%;
 }
 
-.the-content a,
-.awsr-ride-blurb a {
+#awsr-single-content a, .awsr-ride-blurb a {
     font-weight: 500;
     text-decoration: underline;
     text-decoration-color: #ffb600;
     color: darkslategrey;
 }
 
-.the-content a:hover,
-.the-content a:active,
-.awsr-ride-blurb a:hover,
-.awsr-ride-blurb a:active {
+#awsr-single-content a:hover, #awsr-single a:active, .awsr-ride-blurb a:hover, .awsr-ride-blurb a:active {
     color: #ffb600;
 }
 
@@ -477,8 +361,7 @@ hr#blog {
     text-align: center;
 }
 
-/* Gallery */
-
+/* Gallery - there isn't actually a gallery but some of the classes remained */
 
 .awsr-gallery-title {
     background-color: white;
@@ -495,10 +378,7 @@ hr#blog {
 
 /* Comments */
 
-#comment,
-#author,
-#email,
-#url {
+#comment, #author, #email, #url {
     padding: 2px 5px;
     color: white;
     border: solid 1px white;
@@ -533,19 +413,11 @@ hr#blog {
 
 /* Images */
 
-.entry-content img,
-.comment-content img,
-.widget img,
-iframe {
+.entry-content img, .comment-content img, .widget img, iframe {
     max-width: 97.5%;
 }
 
-img[class*="align"],
-img[class*="wp-image-"],
-.awsr-resp-img,
-#awsr-blog-thumb,
-#awsr-portfolio-thumb,
-iframe {
+img[class*="align"], img[class*="wp-image-"], .awsr-resp-img, #awsr-blog-thumb, #awsr-portfolio-thumb, iframe {
     height: auto;
     max-width: 97.5%;
 }
@@ -563,8 +435,7 @@ img.size-full {
 
 /* FORM */
 
-.wpcf7-form input,
-.wpcf7-form textarea {
+.wpcf7-form input, .wpcf7-form textarea {
     line-height: inherit;
     background-color: #ffc639;
     padding: 2px 5px;
@@ -573,7 +444,7 @@ img.size-full {
     font-size: 12px;
 }
 
-/* BOTCHED STUFF TO FIX */
+/* Overwrites bootstrap */
 
 .content {
     width: 800px;
@@ -582,19 +453,17 @@ img.size-full {
     padding-left: 5vw;
 }
 
-.hide-resp {
-    display: none;
+.container-fluid {
+    width: 100vw;
+    max-width: 100%;
 }
+
+/* BOTCHED STUFF TO FIX */
 
 #work-together {
     border-top: 0px;
     margin-top: 10px;
     padding-bottom: 0px;
-}
-
-.container-fluid {
-    width: 100vw;
-    max-width: 100%;
 }
 
 #home-border-left {
@@ -608,8 +477,6 @@ img.size-full {
     padding-left: 10px;
     line-height: 2.5;
 }
-
-#awsr-content {}
 
 #cta {
     z-index: 5;
@@ -626,14 +493,6 @@ img.size-full {
     position: sticky;
     top: 50px;
     z-index: 100;
-}
-
-#responsivehidden {
-    display: none;
-}
-
-#employablecolor {
-    color: whitesmoke;
 }
 
 #right-point {
@@ -690,11 +549,11 @@ img.size-full {
 }
 
 #awsr-writer-blurb {
-    text-align:right;
+    text-align: right;
 }
 
 #awsr-portfolio-client-image-wrapper {
-    min-height:50px;
+    min-height: 50px;
 }
 
 /*img*/
@@ -706,8 +565,7 @@ img.size-full {
     max-width: 360px;
 }
 
-#awsr-blog-thumb,
-#awsr-portfolio-thumb {
+#awsr-blog-thumb, #awsr-portfolio-thumb {
     border: solid 1px #ffb600;
 }
 
@@ -722,16 +580,18 @@ img.size-full {
     border-radius: 40px;
 }
 
+#awsr-testimonial-margin {
+    display: inline;
+    margin-left: 20px;
+}
+
 /* Contact form stuff */
 
-.wpcf7-form input,
-.wpcf7-form textarea,
-label {
+.wpcf7-form input, .wpcf7-form textarea, label {
     width: 100%;
 }
 
-.wpcf7-form input:focus,
-.wpcf7-form textarea:focus {
+.wpcf7-form input:focus, .wpcf7-form textarea:focus {
     outline-color: #ffd05d;
     outline-style: double;
 }
@@ -740,10 +600,7 @@ span.wpcf7-not-valid-tip {
     font-size: 0.8em;
 }
 
-div.wpcf7-validation-errors,
-div.wpcf7-acceptance-missing,
-div.wpcf7-mail-sent-ng,
-div.wpcf7-aborted {
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
     border: 2px solid #ff0000;
     font-size: 0.8em;
 }
@@ -766,7 +623,7 @@ div.wpcf7-aborted {
 }
 
 @media screen and (max-width: 800px) {
-    .the-content {
+    #awsr-single-content {
         margin-left: 0px;
         width: 90vw;
         max-width: 100%;
@@ -793,24 +650,17 @@ div.wpcf7-aborted {
         .container-fluid {
             background-color: whitesmoke;
         }
-        #cyclist:hover:after {
-            background-image: none;
-        }
         #writer:hover:after {
             background-image: none;
         }
-        .awsr-background,
-        .awsr-image-to-fix {
+        .awsr-background {
             display: none;
         }
         .awsr-background-resp {
             display: block;
             left: 0px;
         }
-        .awsr-content,
-        .awsr-content-single,
-        .awsr-content-404,
-        .awsr-content-testimonial {
+        .awsr-content, .awsr-content-404 {
             position: absolute;
             left: 0px;
             top: 150px;
@@ -818,9 +668,7 @@ div.wpcf7-aborted {
             border-top: 1px solid #ffb600;
             width: 100vw;
         }
-        .awsr-single-title,
-        #awsr-single-title-container,
-        .top-container {
+        #awsr-single-title-container {
             display: none;
         }
         h2#awsr-single-title-resp {
@@ -853,21 +701,11 @@ div.wpcf7-aborted {
             top: 250px;
             background-color: white;
         }
-        .hide-resp {
-            display: block;
-        }
-        h3#blog,
-        hr#blog {
+        h3#blog, hr#blog {
             margin-left: 0px;
         }
         #writer {
             text-align: left;
-        }
-        #responsivehidden {
-            display: block;
-        }
-        #employablecolor {
-            color: darkslategrey;
         }
         #awsr-content {
             padding-left: 15px;

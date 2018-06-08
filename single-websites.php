@@ -64,7 +64,7 @@
     <div class="col-md-10 offset-md-1">
        <?php jt_cmb2_file_list_images( 'writing_gallery', 'xs-wide' );?>
     </div>
-</div>  
+</div>
 
 <!-- 
     End of table
