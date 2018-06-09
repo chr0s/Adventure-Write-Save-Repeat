@@ -2,7 +2,7 @@
 
  <div class="container" id="awsr-content">
    
-        <h2>Search results 🕵️</h2>
+        <h2>Search results.</h2>
 
     <?php
 global $query_string;
@@ -61,7 +61,10 @@ if ( $the_query->have_posts() ) :
         <?php wp_reset_postdata(); ?>
 
         <?php else : ?>
-        <p>Hmm, nothing found unfortunately!<p> Head to
+        <p>Hmm, nothing found! 🕵️<p> Head to
             <a href="<?php echo home_url(); ?>">the home page</a> or
             <a href="<?php echo home_url('/thinking-about'); ?>">the blog</a>.</p>
         <?php endif; ?>
+
+        </div>
+    <?php get_footer(); ?>

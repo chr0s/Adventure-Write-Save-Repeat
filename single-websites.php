@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
 <!-- Start of the post info -->
-
-<!--<div class="awsr-content-testimonial"> -->
      
  <div class="container" id="awsr-content">
 

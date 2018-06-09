@@ -9,7 +9,7 @@
     <div class="row" id="awsr-home-lr-container">
         <div id="writer" class="awsr-front-grid awsr-front-grid-left col-md-6 ">
             <h1>
-                <small>A freelance </small><a href="<?php echo home_url('/a-writer'); ?>">writer</a>
+                <small>A freelance </small><a href="<?php echo home_url('/a-writer'); ?>">writer&nbsp;</a>
             </h1>
 
             <p>

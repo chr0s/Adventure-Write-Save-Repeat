@@ -1,158 +1,50 @@
 /*
-    Theme name: Adventure Write Save Repeat
+    Theme name: ChrisLee.is
     Author: Chris Lee
     Author URI: https://chrislee.is/
-    Description: Adventure, write, save, repeat. In orange.
+    Description: Nugz and portfolio. In orange.
     Version: π.1
-    Tags: travel, tiles, full screen images, orange
+    Tags: portfolio, full screen images, orange
 */
-
-/* Resets and Bootstrap overrides */
-
-h1,
-h2,
-h3,
-h4 {
-    padding: 0px;
-    margin: 0px;
-    font-family: Raleway;
-}
-
-h2 {
-    padding-bottom: 25px;
-}
-
-blockquote {
-    color: gray;
-}
-
-p {
-    padding-top: 5px;
-}
-
-/* CSS */
 
 html,
 body {
     margin: 0px;
     padding: 0px;
-    color: black;
+    color: darkslategrey;
     font-family: Raleway;
     width: 100%;
     height: 100%;
-}
-
-body {
-    color: darkslategray;
-    background-size: cover;
     background-color: whitesmoke;
     font-weight: 500;
     font-size: 16px;
 }
 
-a {
-    font-weight: 700;
-}
-
-a,
-a:link,
-a:visited {
-    color: #ffb600;
-}
-
-a:hover,
-a:active {
-    color: #ffc639;
-}
-
-.awsr-sub-header a,
-.awsr-sub-header a:link,
-.awsr-sub-header a:visited,
-.awsr-sub-header a:hover,
-.awsr-sub-header a:active {
-    color: white;
-    font-weight: 700;
-}
-
-#cta a,
-#cta a:link,
-#cta a:visited {
-    color: #ffd05d;
-}
-
-#cta a:hover,
-#cta a:active {
-    color: #FFDD87;
-}
-
-#awsr-footer a {
-    color: white;
-    font-weight: 500;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-size: 32px;
-}
-
-h1 a {
-    font-weight: 500;
-}
-
-h2 {
-    font-weight: 500;
-    color: darkslategrey;
-    text-transform: uppercase;
-}
-
-h3 {
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 0px 30px 0px;
-}
-
-h3#home {
-    font-size: 16px;
-    padding: 0px;
-    display: inline;
-    background-color: whitesmoke;
-    font-weight: 600;
-}
-
-h4 {
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #888888;
-}
-
-h4 a {
-    font-weight: 500;
-}
-
-.awsr-resp-img {
-    display: none;
-}
-
-/* WP theme Overrides and fixes for dumb little shit */
+/* Resets and Wordpress / Bootstrap overrides */
 
 ul.post-categories {
     display: inline;
     list-style-type: none;
 }
 
-hr.resp {
-    display: none;
-}
-
-hr#blog {
-    border-color: #ffb600;
-    margin: 0px 0px 30px 0px;
-    margin-left: -40px;
-}
-
 .wp-caption-text {
     max-width: 97.5%;
+}
+
+blockquote {
+    color: gray;
+}
+
+.content {
+    width: 800px;
+    height: auto;
+    padding-top: 20px;
+    padding-left: 5vw;
+}
+
+.container-fluid {
+    width: 100vw;
+    max-width: 100%;
 }
 
 /* This one stops horizontal scroll for full-width elements and overrides bootstrap padding */
@@ -163,207 +55,11 @@ hr#blog {
     margin-right: 0px;
 }
 
-.col,
-.col-1,
-.col-10,
-.col-11,
-.col-12,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-auto,
-.col-lg,
-.col-lg-1,
-.col-lg-10,
-.col-lg-11,
-.col-lg-12,
-.col-lg-2,
-.col-lg-3,
-.col-lg-4,
-.col-lg-5,
-.col-lg-6,
-.col-lg-7,
-.col-lg-8,
-.col-lg-9,
-.col-lg-auto,
-.col-md,
-.col-md-1,
-.col-md-10,
-.col-md-11,
-.col-md-12,
-.col-md-2,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-md-8,
-.col-md-9,
-.col-md-auto,
-.col-sm,
-.col-sm-1,
-.col-sm-10,
-.col-sm-11,
-.col-sm-12,
-.col-sm-2,
-.col-sm-3,
-.col-sm-4,
-.col-sm-5,
-.col-sm-6,
-.col-sm-7,
-.col-sm-8,
-.col-sm-9,
-.col-sm-auto,
-.col-xl,
-.col-xl-1,
-.col-xl-10,
-.col-xl-11,
-.col-xl-12,
-.col-xl-2,
-.col-xl-3,
-.col-xl-4,
-.col-xl-5,
-.col-xl-6,
-.col-xl-7,
-.col-xl-8,
-.col-xl-9,
-.col-xl-auto {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-/* Container */
+/* Structure */
 
 .container {
     padding-top: 95px;
 }
-
-/* Home */
-
-#web-designer:hover:after,
-#writer:hover:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-.awsr-front-grid {
-    flex: 1;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.awsr-front-grid-right {
-    text-align: left;
-    background-position: left;
-}
-
-.awsr-front-grid-left {
-    text-align: right;
-    background-position: right;
-}
-
-/* Header */
-
-.awsr-header,
-.awsr-sub-header {
-    text-align: center;
-    z-index: 5;
-    font-family: Raleway;
-    text-transform: uppercase;
-    width: 100vw;
-    max-width: 100%;
-}
-
-.awsr-header {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    height: 60px;
-    background-color: #FFDB80;
-    color: white;
-}
-
-.awsr-header a {
-    font-weight: 900;
-}
-
-.awsr-sub-header {
-    top: 60px;
-    left: 0px;
-    font-size: 16px;
-    color: white;
-    height: auto;
-    text-align: center;
-    padding: 5px 0px;
-    border-bottom: solid 1px #ffb600;
-    background-color: #ffb600;
-    font-weight: 400;
-    position: sticky;
-    top: 0px;
-}
-
-.awsr-sub-header a {
-    font-weight: 500;
-}
-
-.awsr-header h1 {
-    color: white;
-    display: inline;
-    font-weight: 900;
-    font-size: 50px;
-    text-shadow: 2px 2px #ffb600;
-}
-
-#awsr-is {
-    font-size: 26px;
-}
-
-.awsr-header a,
-.awsr-header a:hover,
-.awsr-header a:active {
-    color: white;
-    text-decoration: none;
-}
-
-.awsr-header ul,
-.awsr-sub-header ul {
-    list-style-type: none;
-}
-
-.awsr-header li,
-.awsr-sub-header li {
-    display: inline;
-}
-
-/* Search - these aren't awsr but overwrite theme tags */
-
-.widgets-area input {
-    padding: 2px 5px;
-    color: white;
-    border: solid 1px white;
-    background-color: #ffc639;
-    font-size: 12px;
-}
-
-.widgets-area input::placeholder {
-    color: white;
-}
-
-.widgets-area input:focus {
-    outline: none;
-}
-
-/* Single */
 
 .awsr-background {
     height: 100%;
@@ -430,11 +126,6 @@ hr#blog {
     background-color: white;
 }
 
-.awsr-content-testimonial {
-    top: 30vh;
-    border-bottom: 1px solid #ffb600;
-}
-
 #awsr-single-content {
     margin-left: 50px;
     width: 750px;
@@ -444,6 +135,111 @@ hr#blog {
 .awsr-ride-blurb {
     margin-left: 5px;
     width: 80%;
+}
+
+.awsr-nav {
+    text-align: center;
+}
+
+#awsr-blog-hero-container {
+    width: 100vw;
+    max-width: 100%;
+    padding: 0px;
+    border-bottom: 1px solid #ffb600;
+}
+
+#awsr-blog-hero-image {
+    object-fit: cover;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 80vh;
+    left: 0;
+    top: 0;
+}
+
+#awsr-single-title-container {
+    background-color: transparent;
+    position: absolute;
+    bottom: 1rem;
+    max-width: calc(100% - 10px - 10px - 4px);
+    text-shadow: 0 1px 2px rgba(18, 31, 31, .6);
+    padding: 0 2em;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4 {
+    padding: 0px;
+    margin: 0px;
+    font-family: Raleway;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    padding-bottom: 25px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0px 30px 0px;
+}
+
+h3#home {
+    font-size: 16px;
+    padding: 0px;
+    display: inline;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 14px;
+    color: #888888;
+}
+
+/* Links */
+
+a {
+    font-weight: 700;
+}
+
+a,
+a:link,
+a:visited {
+    color: #ffb600;
+}
+
+a:hover,
+a:active {
+    color: #ffc639;
+}
+
+#cta a,
+#cta a:link,
+#cta a:visited {
+    color: #ffd05d;
+}
+
+#cta a:hover,
+#cta a:active {
+    color: #FFDD87;
+}
+
+#awsr-footer a {
+    color: white;
+    font-weight: 500;
+}
+
+h1 a, h4 a {
+    font-weight: 500;
 }
 
 #awsr-single-content a,
@@ -461,8 +257,153 @@ hr#blog {
     color: #ffb600;
 }
 
-.awsr-nav {
+/* Responsive fixes */
+
+.awsr-resp-img {
+    display: none;
+}
+
+hr.resp {
+    display: none;
+}
+
+/* Blog-specific styling */
+
+hr#blog {
+    border-color: #ffb600;
+    margin: 0px 0px 30px 0px;
+    margin-left: -40px;
+}
+
+/* Home-specific styling */
+
+#web-designer:hover:after,
+#writer:hover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.awsr-front-grid {
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.awsr-front-grid-right {
+    text-align: left;
+    background-position: left;
+}
+
+.awsr-front-grid-left {
+    text-align: right;
+    background-position: right;
+}
+
+#work-together {
+    border-top: 0px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+}
+
+#home-border-left {
+    border-right: 0.5px #ffb600 solid;
+    padding-right: 10px;
+    line-height: 2.5;
+}
+
+#home-border-right {
+    border-left: 0.5px #ffb600 solid;
+    padding-left: 10px;
+    line-height: 2.5;
+}
+
+#awsr-home-lr-container {
+    display: inline-flex;
+    display: flex;
+    padding-top: 10vh;
+    height: auto;
+}
+
+/* Header-specific styling */
+
+.awsr-header {
     text-align: center;
+    z-index: 5;
+    font-family: Raleway;
+    text-transform: uppercase;
+    width: 100vw;
+    max-width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    background-color: #FFDB80;
+    color: white;
+}
+
+.awsr-header a {
+    font-weight: 900;
+}
+
+.awsr-header h1 {
+    color: white;
+    display: inline;
+    font-weight: 900;
+    font-size: 50px;
+    text-shadow: 2px 2px #ffb600;
+}
+
+#awsr-is {
+    font-size: 26px;
+}
+
+.awsr-header a,
+.awsr-header a:hover,
+.awsr-header a:active {
+    color: white;
+    text-decoration: none;
+}
+
+/* CTA styles */
+
+#cta {
+    z-index: 5;
+    box-shadow: 0.5px 0.5px 0.5px #5faeec;
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+    background-color: #5faeec;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#sticky-cta {
+    position: sticky;
+    top: 50px;
+    z-index: 100;
+}
+
+/* Search - these aren't awsr but overwrite theme tags */
+
+.widgets-area input {
+    padding: 2px 5px;
+    color: white;
+    border: solid 1px white;
+    background-color: #ffc639;
+    font-size: 12px;
+}
+
+.widgets-area input::placeholder {
+    color: white;
+}
+
+.widgets-area input:focus {
+    outline: none;
 }
 
 /* Gallery - there isn't actually a gallery but some of the classes remained */
@@ -548,7 +489,7 @@ img.size-full {
     border: none;
 }
 
-/* FORM */
+/* Contact form 7 */
 
 .wpcf7-form input,
 .wpcf7-form textarea {
@@ -560,56 +501,7 @@ img.size-full {
     font-size: 12px;
 }
 
-/* Overwrites bootstrap */
-
-.content {
-    width: 800px;
-    height: auto;
-    padding-top: 20px;
-    padding-left: 5vw;
-}
-
-.container-fluid {
-    width: 100vw;
-    max-width: 100%;
-}
-
-/* BOTCHED STUFF TO FIX */
-
-#work-together {
-    border-top: 0px;
-    margin-top: 10px;
-    padding-bottom: 0px;
-}
-
-#home-border-left {
-    border-right: 0.5px #ffb600 solid;
-    padding-right: 10px;
-    line-height: 2.5;
-}
-
-#home-border-right {
-    border-left: 0.5px #ffb600 solid;
-    padding-left: 10px;
-    line-height: 2.5;
-}
-
-#cta {
-    z-index: 5;
-    box-shadow: 0.5px 0.5px 0.5px #5faeec;
-    border-radius: 10px;
-    border: 3px solid whitesmoke;
-    background-color: #5faeec;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-#sticky-cta {
-    position: sticky;
-    top: 50px;
-    z-index: 100;
-}
+/* Contact and portfolio */
 
 #right-point {
     display: inline-block;
@@ -627,38 +519,6 @@ img.size-full {
     font-size: larger;
 }
 
-#awsr-blog-hero-container {
-    width: 100vw;
-    max-width: 100%;
-    padding: 0px;
-    border-bottom: 1px solid #ffb600;
-}
-
-#awsr-blog-hero-image {
-    object-fit: cover;
-    width: 100vw;
-    max-width: 100%;
-    max-height: 80vh;
-    left: 0;
-    top: 0;
-}
-
-#awsr-single-title-container {
-    background-color: transparent;
-    position: absolute;
-    bottom: 1rem;
-    max-width: calc(100% - 10px - 10px - 4px);
-    text-shadow: 0 1px 2px rgba(18, 31, 31, .6);
-    padding: 0 2em;
-}
-
-#awsr-home-lr-container {
-    display: inline-flex;
-    display: flex;
-    padding-top: 10vh;
-    height: auto;
-}
-
 #awsr-portfolio-container {
     margin-top: 10px;
     padding: 5px;
@@ -672,8 +532,6 @@ img.size-full {
     min-height: 50px;
     padding: 2px;
 }
-
-/*img*/
 
 #awsr-file-list-gallery {
     height: auto;
@@ -696,7 +554,7 @@ img.size-full {
     max-width: 100%;
     border: 1px solid darkslategrey;
     border-radius: 40px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
 #awsr-testimonial-margin {
@@ -704,7 +562,9 @@ img.size-full {
     margin-left: 20px;
 }
 
-#awsr-archive-blurb {padding:5px;}
+#awsr-archive-blurb {
+    padding: 5px;
+}
 
 /* Navbar */
 
@@ -767,7 +627,6 @@ div.wpcf7-aborted {
     width: 100%;
 }
 
-
 /* Responsive */
 
 @media screen and (max-width: 991.98px) {
@@ -786,97 +645,99 @@ div.wpcf7-aborted {
         max-width: 100%;
         padding: 0px 2vw;
     }
-    @media (max-width: 767.98px) {
-        #home-border-left {
-            padding-left: 10px;
-            padding-right: 0px;
-            border-left: 0.5px #ffb600 solid;
-            border-right: none;
-        }
-        .awsr-front-grid-left {
-            text-align: left;
-        }
-        #sticky-cta {
-            top: 100px;
-        }
+}
+
+@media (max-width: 767.98px) {
+    #home-border-left {
+        padding-left: 10px;
+        padding-right: 0px;
+        border-left: 0.5px #ffb600 solid;
+        border-right: none;
     }
-    @media screen and (max-width: 767.98px) {
-        body.awsr-home .container-fluid {
-            background-color: white;
-        }
-        .container-fluid {
-            background-color: whitesmoke;
-        }
-        #writer:hover:after {
-            background-image: none;
-        }
-        .awsr-background {
-            display: none;
-        }
-        .awsr-background-resp {
-            display: block;
-            left: 0px;
-        }
-        .awsr-content,
-        .awsr-content-404 {
-            position: absolute;
-            left: 0px;
-            top: 150px;
-            border: none;
-            border-top: 1px solid #ffb600;
-            width: 100vw;
-        }
-        #awsr-single-title-container {
-            display: none;
-        }
-        h2#awsr-single-title-resp {
-            font-size: 20px;
-            font-weight: 500;
-            text-transform: uppercase;
-            text-align: left;
-            color: darkslategrey;
-            margin-top: 10px;
-            line-height: 1;
-        }
-        #awsr-single-title-resp {
-            display: block;
-        }
-        .awsr-resp-img {
-            display: block;
-        }
-        hr.resp {
-            display: block;
-        }
-        #awsr-tags {
-            display: none;
-        }
-        /* botched stuff to fix */
-        .content {
-            width: 100vw;
-            margin: 0px;
-            padding: 2vw;
-            position: absolute;
-            top: 250px;
-            background-color: white;
-        }
-        h3#blog,
-        hr#blog {
-            margin-left: 0px;
-        }
-        #writer {
-            text-align: left;
-        }
-        #awsr-content {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        #awsr-content-404 {
-            display: none;
-        }
-        #awsr-nav-hide {
-            display: none;
-        }
-        .navbar-nav>li {
-            display: block;
-        }
+    .awsr-front-grid-left {
+        text-align: left;
     }
+    #sticky-cta {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    body.awsr-home .container-fluid {
+        background-color: white;
+    }
+    .container-fluid {
+        background-color: whitesmoke;
+    }
+    #writer:hover:after {
+        background-image: none;
+    }
+    .awsr-background {
+        display: none;
+    }
+    .awsr-background-resp {
+        display: block;
+        left: 0px;
+    }
+    .awsr-content,
+    .awsr-content-404 {
+        position: absolute;
+        left: 0px;
+        top: 150px;
+        border: none;
+        border-top: 1px solid #ffb600;
+        width: 100vw;
+    }
+    #awsr-single-title-container {
+        display: none;
+    }
+    h2#awsr-single-title-resp {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: left;
+        color: darkslategrey;
+        margin-top: 10px;
+        line-height: 1;
+    }
+    #awsr-single-title-resp {
+        display: block;
+    }
+    .awsr-resp-img {
+        display: block;
+    }
+    hr.resp {
+        display: block;
+    }
+    #awsr-tags {
+        display: none;
+    }
+    .content {
+        width: 100vw;
+        margin: 0px;
+        padding: 2vw;
+        position: absolute;
+        top: 250px;
+        background-color: white;
+    }
+    h3#blog,
+    hr#blog {
+        margin-left: 0px;
+    }
+    #writer {
+        text-align: left;
+    }
+    #awsr-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #awsr-content-404 {
+        display: none;
+    }
+    #awsr-nav-hide {
+        display: none;
+    }
+    .navbar-nav>li {
+        display: block;
+    }
+}

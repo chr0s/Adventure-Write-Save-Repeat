@@ -6,12 +6,6 @@
 
 <h2>Portfolio of websites</h2> <p>
 
-[add]
-
-<div class="row" id="sticky-cta">
-<div class="col-sm-6 offset-sm-3 col-10 offset-1" id="cta">
-[add]
-        </div></div>
 
 <hr>
 <div class="row">
