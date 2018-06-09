@@ -22,7 +22,7 @@ function awsr_script_enqueue() {
     wp_enqueue_style('theme-css', get_template_directory_uri() . '/style.css' );
     
     // JS
-    wp_enqueue_script('jquery');
+    wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
 //    wp_enqueue_script('bootstrap-min-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '1.0', 'false');
     wp_enqueue_script('customjs', get_template_directory_uri() . '/js/awsr.js', array(), '1.0', 'false');
 
@@ -154,7 +154,7 @@ function awsr_custom_posts() {
                 ), //which parts of the edit screen get shown
             'taxonomies'          =>  array('category', 'post_tags'),
             'menu_position'         =>  8,
-            'exclude_from_search'   =>  false,
+            'exclude_from_search'   =>  true,
             );
     
         register_post_type('clients', $args3);
@@ -271,8 +271,8 @@ function cmb2_writing() {
 	 */
 	$cmb = new_cmb2_box( array(
 		'id'            => 'awsr-writing-info',
-		'title'         => __( 'Writing info', 'cmb2' ),
-		'object_types'  => array( 'writing', ), // Post type
+		'title'         => __( 'Project info', 'cmb2' ),
+		'object_types'  => array( 'writing', 'websites'), // Post type
 		'context'       => 'advanced',
 		'priority'      => 'high',
 		'show_names'    => true, // Show field names on the left
@@ -282,21 +282,21 @@ function cmb2_writing() {
 
 	// Brief
 	$cmb->add_field( array(
-		'name'       => 'Writing Brief',
+		'name'       => 'Brief',
 		'id'         => 'writing_brief',
 		'type'       => 'wysiwyg',
     ) );
     
     // Results
     $cmb->add_field( array(
-		'name'       => 'Writing Results',
+		'name'       => 'Results',
 		'id'         => 'writing_results',
 		'type'       => 'wysiwyg',
     ) );
 
     // Gallery
     $cmb->add_field( array(
-		'name'       => 'Writing Gallery',
+		'name'       => 'Gallery',
 		'id'         => 'writing_gallery',
 		'type'       => 'file_list',
     ) );    

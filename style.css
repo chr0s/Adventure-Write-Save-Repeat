@@ -18,6 +18,7 @@ body {
     background-color: whitesmoke;
     font-weight: 500;
     font-size: 16px;
+    line-height:2;
 }
 
 /* Resets and Wordpress / Bootstrap overrides */
@@ -129,6 +130,7 @@ blockquote {
 #awsr-single-content {
     margin-left: 50px;
     width: 750px;
+    max-width:95%;
     font-size: 18px;
 }
 
@@ -198,6 +200,12 @@ h3#home {
     padding: 0px;
     display: inline;
     font-weight: 600;
+}
+
+h3#blog {
+    margin-left: -40px;
+    font-size: 32px;
+    padding-bottom: 0px
 }
 
 h4 {
@@ -537,7 +545,7 @@ img.size-full {
     height: auto;
     border: solid 1px darkslategrey;
     margin: 5px;
-    max-width: 360px;
+    max-width: 100%;
 }
 
 #awsr-blog-thumb,
@@ -572,6 +580,9 @@ img.size-full {
     text-transform: uppercase;
     background-color: #ffb600;
     color: white;
+    position:sticky;
+    top:0px;
+    z-index:10;
 }
 
 .navbar-dark .navbar-nav .nav-link {

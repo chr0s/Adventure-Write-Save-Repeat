@@ -28,6 +28,7 @@
         ga('send', 'pageview');
     </script>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <?php
@@ -84,7 +85,7 @@ if(is_single() || is_page()) {
     </div>
     <!-- .awsr-header -->
 
-    <nav class="navbar navbar-expand-md  navbar-dark" >
+    <nav class="navbar navbar-expand-md navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
