@@ -10,17 +10,22 @@
 
     <link rel="shortcut icon" href="https://chrislee.is/wp-content/uploads/2018/04/ico.ico" />
 
+
     <script>
         (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-102373825-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -43,66 +48,80 @@ if(is_single() || is_page()) {
         <meta name="twitter:description" value="<?php echo $twitter_desc; ?>" />
         <meta name="twitter:image" value="<?php echo $twitter_thumb; ?>" />
         <meta name="twitter:site" value="@ChrisLee_is" />
-  
 
-            <meta name="twitter:creator" value="@ChrisLee_is" />
-         
 
-                <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="twitter:creator" value="@ChrisLee_is" />
 
-<!-- fontawesome -->
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- fontawesome -->
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous">
 
 </head>
 
 <body>
 
-        <div class="awsr-header" >
+    <div class="awsr-header">
 
-            <div class="row">
+        <div class="row">
 
-                <div class="col-12">
-                    <h1>
-                        <a href="<?php echo home_url(); ?>">Chrislee
-                            <span id="awsr-is">.is</span>
-                        </a>
-                    </h1>
-                </div>
-                <!-- .col -->
+            <div class="col-12">
+                <h1>
+                    <a href="<?php echo home_url(); ?>">Chrislee
+                        <span id="awsr-is">.is</span>
+                    </a>
+                </h1>
 
             </div>
-            <!-- .row -->
+            <!-- .col -->
 
         </div>
-        <!-- .awsr-header -->
+        <!-- .row -->
 
-        <div class="awsr-sub-header" >
+    </div>
+    <!-- .awsr-header -->
 
-            <div class="row">
+    <nav class="navbar navbar-expand-md  navbar-dark" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <div class="col-xs-12 col-sm-6 offset-sm-3">
-                    <small>a</small>
-                    <a href="<?php echo home_url('/a-writer'); ?>">freelance writer</a>
-                    <small>&</small>
-                    <a href="<?php echo home_url('/a-web-designer'); ?>">web designer</a>
-                    <small>|
-                        <a href="<?php echo home_url('/thinking-about'); ?>">blog</a>
-                        <small>|</small>
-                        <a href="<?php echo home_url('/contact-me'); ?>">contact me</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align:center;">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <small id="awsr-nav-inline">
+                        <span id="awsr-nav-hide">a&nbsp;</small>
+                    </span>
+                    <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/a-writer'); ?>">freelance writer</a>
+                </li>
+                <li class="nav-item">
+                    <small id="awsr-nav-inline">
+                        <span id="awsr-nav-hide">&amp;&nbsp;</small>
+                    </span>
+                    <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/a-web-designer'); ?>">Web Designer</a>
+                </li>
+                <li class="nav-item">
+                    <small id="awsr-nav-inline">
+                        <span id="awsr-nav-hide">| </span>
+                        <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/thinking-about'); ?>">Blog</a>
                     </small>
-                </div>
-                <!-- .col -->
-
-                <div class="col-xs-12 col-sm-3">
+                </li>
+                <li class="nav-item">
+                    <small id="awsr-nav-inline">
+                        <span id="awsr-nav-hide">| </span>
+                        <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/contact-me'); ?>">Contact me</a>
+                    </small>
+                </li>
+                <li class="nav item">
                     <?php get_sidebar(); ?>
-                </div>
-                <!-- .col -->
-
-            </div>
-            <!-- .row -->
-
+                </li>
+                </li>
+            </ul>
         </div>
-        <!-- .awsr-sub-header -->
+    </nav>
 
-        <div class="container-fluid">
+    <div class="container-fluid">

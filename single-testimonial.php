@@ -15,7 +15,7 @@
     
         while( have_posts() ): the_post(); ?>
 
-    <div class="the-content">
+    <div id="awsr-single-content">
         <?php the_content(); ?>
     </div>
 

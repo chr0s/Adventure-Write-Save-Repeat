@@ -9,8 +9,7 @@
     <div class="row" id="awsr-home-lr-container">
         <div id="writer" class="awsr-front-grid awsr-front-grid-left col-md-6 ">
             <h1>
-                <small>A freelance &nbsp;</small>
-                <a href="<?php echo home_url('/a-writer'); ?>">writer</a>
+                <small>A freelance </small><a href="<?php echo home_url('/a-writer'); ?>">writer</a>
             </h1>
 
             <p>
@@ -18,9 +17,9 @@
                 <div id="home-border-left">
                     <h3 id="home">Words to make your business 💥 pop 💥</h3>
                     <br>Reliable, speedy, &amp; experienced
-                    <br>My copy increases engagement, leads, &amp; conversions
-                    <br> Reader focussed, backed up by
+                    <br> Backed up by
                     <A href="<?php echo home_url('/writing'); ?>">a portfolio of satisfied customers</A>
+                    <br>My copy increases engagement, leads, &amp; conversions
                     <br> SEO optimised: 10+ years in the industry
                     <br> Published in print and digital: magazines, newspapers &amp; beyond
             </p>

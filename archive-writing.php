@@ -46,7 +46,7 @@ If you like the look of these writings and fancy one for yourself, click the big
                 <!-- .awsr-gallery-title -->
         </a>
 
- <div >
+ <div id="awsr-archive-blurb">
                         <small>
                             <?php the_excerpt(); ?>
                         </small>

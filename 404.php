@@ -1,26 +1,50 @@
-<?php get_header(); ?>
+<?php
 
-<div class="awsr-background" ></div>
 
-<div class="awsr-content-404" >
 
-    <p>
-        <h2>Nothing here!</h2>
-        <br>You can either double-check the URL, head to
-        <strong>
-            <a href="<?php echo home_url(); ?>">the home page</a>
-        </strong> or
-        <strong>
-            <a href="<?php echo home_url('/thinking-about'); ?>">the blog</a>
-        </strong>, or
-        <strong>find Wally!</strong>
-    </p>
+ get_header(); ?>
 
-    <a href="<?php echo home_url('/wp-content/uploads/2018/01/Wally404sm.jpg'); ?>">
-        <img class="awsr-resp-img" src="<?php echo home_url('/wp-content/uploads/2018/01/Wally404sm.jpg'); ?>">
-    </a>
+    </div>
+    <!-- container-fluid -->
 
-</div>
-<!-- .awsr-content -->
+    <?php $filter = get_post_meta(get_the_ID(), 'filter', true); ?>
 
-<?php get_footer(); ?>
+    <div class="container-fluid" id="awsr-blog-hero-container">
+
+        <!-- hero image: style tag required for PHP call which applies filter, whose value is determined via post-specifc custom field entry -->
+
+        <img id="awsr-blog-hero-image" src="<?php echo home_url('wp-content/uploads/2018/01/Wally404.jpg'); ?>">
+
+        <div id="awsr-content-404">
+
+            <h2>
+                Nothing here!
+            </h2>
+            Find Wally instead, or head to the
+            <a href="<?php echo home_url() ?>">home page</a> or
+            <a href="<?php echo home_url('/thinking-about/') ?>">blog</a>.
+        </div>
+        <!-- awsr-single-title-container -->
+    </div>
+    <!-- awsr-blog-hero-container -->
+
+
+    <div id="awsr-single-title-resp">
+        <div class="container" id="awsr-content">
+            <h2>
+                Nothing here!
+            </h2>
+
+
+            Find Wally instead, or head to the
+            <a href="<?php echo home_url() ?>">home page</a> or
+            <a href="<?php echo home_url('/thinking-about/') ?>">blog</a>.
+
+        </div>
+
+    </div>
+    <!-- .content -->
+    </div>
+    <!-- .bottom-container -->
+
+    <?php get_footer(); ?>

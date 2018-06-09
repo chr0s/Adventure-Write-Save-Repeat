@@ -6,9 +6,9 @@
 
 
 
- <!--   <h2>Archive of posts about
+    <h2>Archive of posts about
         <?php single_tag_title(); ?>
-</h2> -->
+</h2> <hr>
 
     <div class="row">
 
@@ -25,26 +25,28 @@
         <a href="<?php the_permalink(); ?>">
             <div class="col-md-4">
 
-                <img src="<?php the_post_thumbnail_url('169-gallery'); ?>">
+                <img id="awsr-portfolio-thumb" src="<?php the_post_thumbnail_url('169-gallery'); ?>">
 
-                <!-- Start of the post info -->
+                 <div class="awsr-gallery-title" >
 
-                <div class="awsr-gallery-title">
+                    
+<small>
+    <?php the_title(); ?>
+    <br>
+</small>
 
-                    <small id="awsr-archive-date">
-                        <?php the_time('j/n/Y'); ?>
-                    </small>
-                    <br>
-                    <small>
-                        <?php the_title(); ?>
-                        <br>
-                    </small>
+</div>
+<!-- .awsr-gallery-title -->
+</a>
 
-                </div>
-                <!-- .awsr-gallery-title -->
-        </a>
+<div id="awsr-archive-blurb">
+    <small>
+        <?php the_excerpt(); ?>
+    </small>
+    <hr>
+</div>
 
-        </div>
+</div>
         <!-- .col -->
 
         <?php endwhile;

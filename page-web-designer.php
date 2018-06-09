@@ -51,7 +51,7 @@
                                 <h4>
                                     <?php the_title(); ?>
                                 </h4>
-                                <small><?php the_content(); ?><p> -
+                                <small><?php the_content(); ?><p><h4> -
                                     <a href="<?php the_permalink(); ?>">Read full testimonial</a></small>
                                 </h4>
                                 <hr>

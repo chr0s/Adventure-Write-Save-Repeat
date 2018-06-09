@@ -43,7 +43,7 @@
                 <!-- .awsr-gallery-title -->
         </a>
 
- <div >
+ <div id="awsr-archive-blurb">
                         <small>
                             <?php the_excerpt(); ?>
                         </small>
