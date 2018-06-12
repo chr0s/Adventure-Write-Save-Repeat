@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<!-- Start of the loop -->
-
 <div class="container" id="awsr-content">
 
 
@@ -19,8 +17,6 @@
     if( have_posts() ):
     
         while( have_posts() ): the_post(); ?>
-
-        <!-- Start of the featured image -->
 
         <a href="<?php the_permalink(); ?>">
             <div class="col-md-4">
@@ -66,5 +62,3 @@
 
 </div>
 <!-- .awsr-content-archive -->
-
-<!-- End of the loop -->

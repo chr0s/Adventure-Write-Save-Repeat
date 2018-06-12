@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<!-- <div class="awsr-background" style="background-color: whitesmoke;"></div> -->
-
 <div class="container" id="awsr-content" >
 
     <h2>The blog</h2>

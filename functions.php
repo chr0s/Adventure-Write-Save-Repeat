@@ -66,7 +66,7 @@ function awsr_custom_posts() {
     $args1 = array(
         'labels'                => $labels1,
         'public'                => true,
-        'has_archive'           => true, 
+        'has_archive'           => false, 
         'publicly_queryable'    => true,
         'query_var'             => true,
         'rewrite'               => array(
@@ -203,6 +203,7 @@ add_action('init', 'awsr_custom_posts');
 
 add_image_size( 'small-wide', 720, 405, false);
 add_image_size( 'xs-wide', 360, 202, false);
+add_image_size( 'xs-test', 80, 80, false);
 
 // SIDEBAR 
 

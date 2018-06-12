@@ -1,10 +1,8 @@
 <?php get_header(); ?>
 
-<!-- Start of the post info -->
-     
  <div class="container" id="awsr-content">
 
-<img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+<img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('xs-test'); ?>">
     <h3 id="awsr-testimonial-margin">
         <?php the_title(); ?>
     </h3>

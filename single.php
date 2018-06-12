@@ -12,9 +12,6 @@
     
             while( have_posts() ): the_post(); ?>
 
-
-<!-- hero image: style tag required for PHP call which applies filter, whose value is determined via post-specifc custom field entry --> 
-
         <img 
             id="awsr-blog-hero-image"
             style="filter: <?php echo $filter; ?>;" 

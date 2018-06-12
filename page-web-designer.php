@@ -6,8 +6,6 @@
 
  get_header(); ?>
 
-    <!-- Start of the loop -->
-
     <div class="container" id="awsr-content">
 
         <h2>
@@ -28,8 +26,6 @@
 
                         <?php 
 
-    // The query, pulls posts that are 'trip' post type
-
     $the_query = new WP_Query( array( 'post_type' => 'testimonial', 'category_name' => 'Testimonial-web') ); 
 
     // The loop
@@ -41,7 +37,7 @@
                         <div class="row">
                             <div class="col-sm-2">
 
-                                    <img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                                    <img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('xs-test'); ?>">
                                 <br>
 
                             </div>
@@ -82,8 +78,6 @@
 
                             <?php 
 
-    // The query, pulls posts that are 'trip' post type
-
     $the_query = new WP_Query( array( 'post_type' => 'websites' ) ); 
 
     // The loop
@@ -92,14 +86,10 @@
     
         while( $the_query->have_posts() ): $the_query->the_post(); ?>
 
-                            <!-- Start of the featured image -->
-
                             <a href="<?php the_permalink(); ?>">
                         <div class="col-sm-12" id="awsr-portfolio-container" >
 
                             <img id="awsr-portfolio-thumb" src="<?php the_post_thumbnail_url('small-wide'); ?>">
-
-                            <!-- Start of the post info -->
 
                             <div class="awsr-gallery-title">
 

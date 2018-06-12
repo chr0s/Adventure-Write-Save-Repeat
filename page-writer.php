@@ -56,7 +56,7 @@
                     <div class="col-sm-3">
 
                        
-                            <img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                            <img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('xs-test'); ?>">
                        
                         <br>
 

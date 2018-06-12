@@ -17,7 +17,6 @@ foreach($query_args as $key => $string) {
 $the_query = new WP_Query($search_query);
 if ( $the_query->have_posts() ) : 
 ?>
-        <!-- the loop -->
 
         
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

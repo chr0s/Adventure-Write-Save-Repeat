@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 
-<!-- Start of the post info -->
-     
- <div class="container" id="awsr-content">
+      <div class="container" id="awsr-content">
 
 
     <h2 >
@@ -44,10 +42,8 @@
 <div class="col-md-1"><h3>Results.</h3></div>
     <div class="col-md-10 offset-md-1">
             <?php
-        // Grab the metadata from the database
         $writing_results = wpautop( get_post_meta( get_the_ID(), 'writing_results', true ) );
 
-        // Echo the metadata
         echo ( $writing_results );
         ?>    <hr>
     </div>

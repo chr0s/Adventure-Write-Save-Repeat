@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<!-- Start of the loop -->
-
 <div class="container" id="awsr-content">
 
 <h2>Portfolio of websites</h2> <p>
@@ -16,14 +14,10 @@
     
         while( have_posts() ): the_post(); ?>
 
-        <!-- Start of the featured image -->
-
         <a href="<?php the_permalink(); ?>">
             <div class="col-md-4" id="awsr-portfolio-container">
 
                 <img id="awsr-portfolio-thumb"  src="<?php the_post_thumbnail_url('169-gallery'); ?>">
-
-                <!-- Start of the post info -->
 
                 <div class="awsr-gallery-title" >
 
@@ -64,8 +58,5 @@
 
 </div>
 <!-- .awsr-content-archive -->
-
-<!-- End of the loop -->
-
 
     <?php get_footer(); ?>

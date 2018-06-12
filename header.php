@@ -64,7 +64,7 @@ if(is_single() || is_page()) {
 </head>
 
 <body>
-
+<div class="wrapper">
     <div class="awsr-header">
 
         <div class="row">
