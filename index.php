@@ -42,7 +42,7 @@ echo $html; ?>
         <div class="col-sm-8">
 
             <a href="<?php the_permalink(); ?>">
-                <h2>
+                <h2 id="blog">
                     <?php the_title(); ?>
                 </h2>
             </a>

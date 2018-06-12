@@ -43,7 +43,7 @@
                 <br> Understanding of SEO requirements for effective web design
                 <br> Full websites from scratch, or oversight on redesign and optimisation
                 <br> Join my
-                <a href="https://chrislee.is/a-web-designer/">growing portfolio</a> of slick websites
+                <a href="<?php echo home_url(); ?>/a-web-designer/">growing portfolio</a> of slick websites
                 </p>
 
 

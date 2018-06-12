@@ -47,6 +47,11 @@ ul.post-categories {
     height: auto;
 }
 
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
 /* This one stops horizontal scroll for full-width elements and overrides bootstrap padding */
 
 .row {
@@ -183,6 +188,12 @@ h2 {
     font-weight: 500;
 }
 
+h2#blog {
+    color: darkslategrey;
+    text-decoration: underline;
+    text-decoration-color: #ffb600;
+}
+
 h3 {
     font-size: 20px;
     font-weight: 500;
@@ -270,7 +281,7 @@ h1 a, h4 a {
     color: darkslategrey;
 }
 
-#awsr-single-content a:hover, #awsr-single a:active, .awsr-ride-blurb a:hover, .awsr-ride-blurb a:active {
+a:hover, #awsr-single-content a:hover, #awsr-single a:active, .awsr-ride-blurb a:hover, .awsr-ride-blurb a:active {
     color: #ffb600;
 }
 

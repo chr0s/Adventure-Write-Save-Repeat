@@ -19,8 +19,6 @@
         ">
 
    
-</div>    <!-- awsr-blog-hero-container -->
-
     <div id="awsr-single-title-container">
 
         <h2 id="awsr-single-title">
@@ -32,8 +30,7 @@
     </div>
     <!-- awsr-single-title -->
 
-</div>
-<!-- awsr-single-title-container -->
+</div>   <!-- awsr-blog-hero-container -->
 
     <div class="container" id="awsr-content"  >
 
