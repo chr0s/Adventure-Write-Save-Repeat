@@ -6,7 +6,7 @@
 
  get_header(); ?>
 
-    <div class="container" id="awsr-content" >
+    <div class="container" id="awsr-content">
         <h2>WORDS TO MAKE YOUR BUSINESS 💥 POP 💥</h2>
         <div class="row">
             <div class="col-md-8">
@@ -21,17 +21,25 @@
                         My copy is:
                         <small>
                             <ul>
-								<li>Compelling, persuasive and professional</li>
+                                <li>Compelling, persuasive and professional</li>
                                 <li>Benefit-led and tailored to personas and audiences</li>
                                 <li>Strategic, well structured, and optimised for SEO performance</li>
                                 <li>Underpinned by analytics and research</li>
                             </ul>
                         </small>
-                       
+
             </div>
             <!-- col -->
         </div>
         <!-- row -->
+
+        <div class="row" id="sticky-cta">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12 " id="cta">
+                Want good words?
+                <br>Let's chat,
+                <a href="<?php echo home_url('/contact-me'); ?>">digitally</a> or over coffee ☕
+            </div>
+        </div>
 
         <hr>
 
@@ -55,9 +63,9 @@
                 <div class="row">
                     <div class="col-sm-3">
 
-                       
-                            <img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('xs-test'); ?>">
-                       
+
+                        <img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('xs-test'); ?>">
+
                         <br>
 
                     </div>
@@ -66,9 +74,12 @@
 
                         <h4>
                             <?php the_title(); ?>
-                        </h4><p>
-                        <small><?php the_excerpt(); ?></small>
-                        
+                        </h4>
+                        <p>
+                            <small>
+                                <?php the_excerpt(); ?>
+                            </small>
+
                             <hr>
                     </div>
                     <!-- col -->
@@ -91,7 +102,8 @@
 
                 <h3>Portfolio.</h3>
 
-				<small>Highlights below, extensive portfolio <a href="<?php echo home_url('/writing-portfolio'); ?>">here</a>.</small>
+                <small>Highlights below, extensive portfolio
+                    <a href="<?php echo home_url('/writing-portfolio'); ?>">here</a>.</small>
 
                 <div class="row">
 
@@ -110,7 +122,7 @@
                     <!-- Start of the featured image -->
 
                     <a href="<?php the_permalink(); ?>">
-                        <div class="col-sm-12" id="awsr-portfolio-container" >
+                        <div class="col-sm-12" id="awsr-portfolio-container">
 
                             <img id="awsr-portfolio-thumb" src="<?php the_post_thumbnail_url('small-wide'); ?>">
 
@@ -127,7 +139,7 @@
                             <!-- .awsr-gallery-title -->
                     </a>
 
-                    <div >
+                    <div>
                         <small id="awsr-writer-blurb">
                             <?php the_excerpt(); ?>
                         </small>
@@ -154,11 +166,12 @@
 
                 <h3>Clients.</h3>
 
-                <small>As a freelance writer.</small><p>
+                <small>As a freelance writer.</small>
+                <p>
 
-                <div class="row">
+                    <div class="row">
 
-                    <?php 
+                        <?php 
 
     // The query, pulls posts that are 'trip' post type
 
@@ -170,42 +183,43 @@
     
         while( $the_query->have_posts() ): $the_query->the_post(); ?>
 
-                    <!-- Start of the featured image -->
+                        <!-- Start of the featured image -->
 
-                    <div class="col-4 col-sm-6 awsr-gallery-tile" >
-<div id="awsr-portfolio-client-image-wrapper">
-                        <img id="awsr-portfolio-client-image"  src="<?php the_post_thumbnail_url('small-wide'); ?>">
-    </div>
-                        <!-- Start of the post info : copy and paste from prev section if needed again -->
+                        <div class="col-4 col-sm-6 awsr-gallery-tile">
+                            <div id="awsr-portfolio-client-image-wrapper">
+                                <img id="awsr-portfolio-client-image" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                            </div>
+                            <!-- Start of the post info : copy and paste from prev section if needed again -->
 
-                        <div class="awsr-ride-blurb" >
-                            <small>
-                                <?php the_excerpt(); ?>
-                            </small>
+                            <div class="awsr-ride-blurb">
+                                <small>
+                                    <?php the_excerpt(); ?>
+                                </small>
+                            </div>
+
                         </div>
+                        <!-- .col -->
 
-                    </div>
-                    <!-- .col -->
-
-                    <?php endwhile;
+                        <?php endwhile;
 
     endif;
 
 ?>
 
-                </div>
-                <!-- .row -->
-                <small>Through agencies.</small><p>
-                <div class="row">
+                    </div>
+                    <!-- .row -->
+                    <small>Through agencies.</small>
+                    <p>
+                        <div class="row">
 
-                 
 
-                </div>
-                <!-- .row -->
 
-                <div class="row">
+                        </div>
+                        <!-- .row -->
 
-                    <?php 
+                        <div class="row">
+
+                            <?php 
 
     // The query, pulls posts that are 'trip' post type
 
@@ -217,31 +231,31 @@
     
         while( $the_query->have_posts() ): $the_query->the_post(); ?>
 
-                    <!-- Start of the featured image -->
+                            <!-- Start of the featured image -->
 
-                    <div class="col-4 col-sm-6 awsr-gallery-tile"  >
-                    <div id="awsr-portfolio-client-image-wrapper">
-                        <img id="awsr-portfolio-client-image" src="<?php the_post_thumbnail_url('small-wide'); ?>">
-    </div>
-                        <!-- Start of the post info : copy and paste from prev section if needed again -->
+                            <div class="col-4 col-sm-6 awsr-gallery-tile">
+                                <div id="awsr-portfolio-client-image-wrapper">
+                                    <img id="awsr-portfolio-client-image" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                                </div>
+                                <!-- Start of the post info : copy and paste from prev section if needed again -->
 
-                        <div class="awsr-ride-blurb">
-                            <small>
-                                <?php the_excerpt(); ?>
-                            </small>
-                        </div>
+                                <div class="awsr-ride-blurb">
+                                    <small>
+                                        <?php the_excerpt(); ?>
+                                    </small>
+                                </div>
 
-                    </div>
-                    <!-- .col -->
+                            </div>
+                            <!-- .col -->
 
-                    <?php endwhile;
+                            <?php endwhile;
 
     endif;
 
 ?>
 
-                </div>
-                <!-- .row -->
+                        </div>
+                        <!-- .row -->
 
 
 

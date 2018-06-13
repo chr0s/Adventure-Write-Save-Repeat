@@ -7,7 +7,8 @@
     Tags: portfolio, full screen images, orange
 */
 
-html, body {
+html,
+body {
     margin: 0px;
     padding: 0px;
     color: darkslategrey;
@@ -90,7 +91,9 @@ ul.post-categories {
     display: none;
 }
 
-.awsr-content, .awsr-content-404, {
+.awsr-content,
+.awsr-content-404,
+    {
     border-top: 1px solid #ffb600;
     z-index: 1;
     width: 100%;
@@ -172,7 +175,10 @@ ul.post-categories {
 
 /* Headings */
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     padding: 0px;
     margin: 0px;
     font-family: Raleway;
@@ -189,7 +195,6 @@ h2 {
 }
 
 h2#blog {
-    color: darkslategrey;
     text-decoration: underline;
     text-decoration-color: #ffb600;
 }
@@ -231,8 +236,9 @@ blockquote {
 blockquote::before,
 blockquote::after {
     font-family: "Font Awesome 5 Free";
-    font-weight: 900; 
+    font-weight: 900;
     margin-left: -40px;
+    color: #ffc639;
 }
 
 blockquote::before {
@@ -249,19 +255,25 @@ a {
     font-weight: 700;
 }
 
-a, a:link, a:visited {
+a,
+a:link,
+a:visited {
     color: #ffb600;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
     color: #ffc639;
 }
 
-#cta a, #cta a:link, #cta a:visited {
+#cta a,
+#cta a:link,
+#cta a:visited {
     color: #ffd05d;
 }
 
-#cta a:hover, #cta a:active {
+#cta a:hover,
+#cta a:active {
     color: #FFDD87;
 }
 
@@ -270,18 +282,33 @@ a:hover, a:active {
     font-weight: 500;
 }
 
-h1 a, h4 a {
+h1 a,
+h4 a {
     font-weight: 500;
 }
 
-#awsr-single-content a, .awsr-ride-blurb a {
+a h2#blog {
+    color: darkslategrey;
+}
+
+a h2#blog:hover,
+a h2#blog:active {
+    color: #ffb600;
+}
+
+#awsr-single-content a,
+.awsr-ride-blurb a {
     font-weight: 500;
     text-decoration: underline;
     text-decoration-color: #ffb600;
     color: darkslategrey;
 }
 
-a:hover, #awsr-single-content a:hover, #awsr-single a:active, .awsr-ride-blurb a:hover, .awsr-ride-blurb a:active {
+a:hover,
+#awsr-single-content a:hover,
+#awsr-single a:active,
+.awsr-ride-blurb a:hover,
+.awsr-ride-blurb a:active {
     color: #ffb600;
 }
 
@@ -305,7 +332,8 @@ hr#blog {
 
 /* Home-specific styling */
 
-#web-designer:hover:after, #writer:hover:after {
+#web-designer:hover:after,
+#writer:hover:after {
     content: '';
     position: absolute;
     top: 0;
@@ -389,7 +417,9 @@ hr#blog {
     font-size: 26px;
 }
 
-.awsr-header a, .awsr-header a:hover, .awsr-header a:active {
+.awsr-header a,
+.awsr-header a:hover,
+.awsr-header a:active {
     color: white;
     text-decoration: none;
 }
@@ -409,7 +439,7 @@ hr#blog {
 
 #sticky-cta {
     position: sticky;
-    top: 50px;
+    top: 60px;
     z-index: 100;
 }
 
@@ -448,7 +478,10 @@ hr#blog {
 
 /* Comments */
 
-#comment, #author, #email, #url {
+#comment,
+#author,
+#email,
+#url {
     padding: 2px 5px;
     color: white;
     border: solid 1px white;
@@ -483,11 +516,19 @@ hr#blog {
 
 /* Images */
 
-.entry-content img, .comment-content img, .widget img, iframe {
+.entry-content img,
+.comment-content img,
+.widget img,
+iframe {
     max-width: 97.5%;
 }
 
-img[class*="align"], img[class*="wp-image-"], .awsr-resp-img, #awsr-blog-thumb, #awsr-portfolio-thumb, iframe {
+img[class*="align"],
+img[class*="wp-image-"],
+.awsr-resp-img,
+#awsr-blog-thumb,
+#awsr-portfolio-thumb,
+iframe {
     height: auto;
     max-width: 97.5%;
 }
@@ -505,7 +546,8 @@ img.size-full {
 
 /* Contact form 7 */
 
-.wpcf7-form input, .wpcf7-form textarea {
+.wpcf7-form input,
+.wpcf7-form textarea {
     line-height: inherit;
     background-color: #ffc639;
     padding: 2px 5px;
@@ -553,7 +595,8 @@ img.size-full {
     max-width: 100%;
 }
 
-#awsr-blog-thumb, #awsr-portfolio-thumb {
+#awsr-blog-thumb,
+#awsr-portfolio-thumb {
     border: solid 1px #ffb600;
 }
 
@@ -611,11 +654,14 @@ img.size-full {
 
 /* Contact form stuff */
 
-.wpcf7-form input, .wpcf7-form textarea, label {
+.wpcf7-form input,
+.wpcf7-form textarea,
+label {
     width: 100%;
 }
 
-.wpcf7-form input:focus, .wpcf7-form textarea:focus {
+.wpcf7-form input:focus,
+.wpcf7-form textarea:focus {
     outline-color: #ffd05d;
     outline-style: double;
 }
@@ -624,7 +670,10 @@ span.wpcf7-not-valid-tip {
     font-size: 0.8em;
 }
 
-div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-ng, div.wpcf7-aborted {
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing,
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
     border: 2px solid #ff0000;
     font-size: 0.8em;
 }
@@ -688,7 +737,8 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-n
         display: block;
         left: 0px;
     }
-    .awsr-content, .awsr-content-404 {
+    .awsr-content,
+    .awsr-content-404 {
         position: absolute;
         left: 0px;
         top: 150px;
@@ -728,7 +778,8 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-n
         top: 250px;
         background-color: white;
     }
-    h3#blog, hr#blog {
+    h3#blog,
+    hr#blog {
         margin-left: 0px;
     }
     #writer {
@@ -748,4 +799,3 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing, div.wpcf7-mail-sent-n
         display: block;
     }
 }
-

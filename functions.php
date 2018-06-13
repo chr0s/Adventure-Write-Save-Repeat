@@ -273,7 +273,7 @@ function cmb2_writing() {
 	$cmb = new_cmb2_box( array(
 		'id'            => 'awsr-writing-info',
 		'title'         => __( 'Project info', 'cmb2' ),
-		'object_types'  => array( 'writing', 'websites'), // Post type
+		'object_types'  => array( 'writing', 'websites', 'testimonial'), // Post type
 		'context'       => 'advanced',
 		'priority'      => 'high',
 		'show_names'    => true, // Show field names on the left

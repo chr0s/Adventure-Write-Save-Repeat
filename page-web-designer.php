@@ -17,6 +17,14 @@
             <p>
                 <?php echo $post->post_content; ?>
 
+                <div class="row" id="sticky-cta">
+                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12 " id="cta">
+                        Looking for a slick new site?
+                        <br>Get in touch
+                        <a href="<?php echo home_url('/contact-me'); ?>">digitally</a> or, let's chat over coffee ☕
+                    </div>
+                </div>
+
                 <hr>
 
                 <div class="row">
@@ -37,7 +45,7 @@
                         <div class="row">
                             <div class="col-sm-2">
 
-                                    <img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('xs-test'); ?>">
+                                <img id="awsr-testimonial-head" src="<?php the_post_thumbnail_url('xs-test'); ?>">
                                 <br>
 
                             </div>
@@ -47,8 +55,12 @@
                                 <h4>
                                     <?php the_title(); ?>
                                 </h4>
-                                <small><?php the_content(); ?><p><h4> -
-                                    <a href="<?php the_permalink(); ?>">Read full testimonial</a></small>
+                                <small>
+                                    <?php the_excerpt(); ?>
+                                    <p>
+                                        <h4> -
+                                            <a href="<?php the_permalink(); ?>">Read full testimonial</a>
+                                </small>
                                 </h4>
                                 <hr>
                             </div>
@@ -87,27 +99,27 @@
         while( $the_query->have_posts() ): $the_query->the_post(); ?>
 
                             <a href="<?php the_permalink(); ?>">
-                        <div class="col-sm-12" id="awsr-portfolio-container" >
+                                <div class="col-sm-12" id="awsr-portfolio-container">
 
-                            <img id="awsr-portfolio-thumb" src="<?php the_post_thumbnail_url('small-wide'); ?>">
+                                    <img id="awsr-portfolio-thumb" src="<?php the_post_thumbnail_url('small-wide'); ?>">
 
-                            <div class="awsr-gallery-title">
+                                    <div class="awsr-gallery-title">
 
-                                <h4>
-                                    <?php the_title(); ?>
-                                    <br>
-                                </h4>
+                                        <h4>
+                                            <?php the_title(); ?>
+                                            <br>
+                                        </h4>
 
-                            </div>
+                                    </div>
+                                    <!-- .awsr-gallery-title -->
+                            </a>
                             <!-- .awsr-gallery-title -->
-                    </a>
-                                <!-- .awsr-gallery-title -->
 
-                                <div class="awsr-ride-blurb">
-                                    <small>
-                                        <?php the_excerpt(); ?>
-                                    </small>
-                                </div>
+                            <div class="awsr-ride-blurb">
+                                <small>
+                                    <?php the_excerpt(); ?>
+                                </small>
+                            </div>
 
                             </div>
                             <!-- .col -->

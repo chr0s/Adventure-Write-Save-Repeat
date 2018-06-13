@@ -8,7 +8,7 @@
 
     <base href="http://localhost/chris">
 
-    <link rel="shortcut icon" href="https://chrislee.is/wp-content/uploads/2018/04/ico.ico" />
+    <link rel="shortcut icon" href="<?php echo home_url(); ?>/wp-content/uploads/2018/04/ico.ico" />
 
 
     <script>
@@ -48,10 +48,10 @@ if(is_single() || is_page()) {
         <meta name="twitter:title" value="<?php echo $twitter_title; ?>" />
         <meta name="twitter:description" value="<?php echo $twitter_desc; ?>" />
         <meta name="twitter:image" value="<?php echo $twitter_thumb; ?>" />
-        <meta name="twitter:site" value="@ChrisLee_is" />
+        <meta name="twitter:site" value="@ChrisLeeis" />
 
 
-        <meta name="twitter:creator" value="@ChrisLee_is" />
+        <meta name="twitter:creator" value="@ChrisLeeis" />
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -64,65 +64,65 @@ if(is_single() || is_page()) {
 </head>
 
 <body>
-<div class="wrapper">
-    <div class="awsr-header">
+    <div class="wrapper">
+        <div class="awsr-header">
 
-        <div class="row">
+            <div class="row">
 
-            <div class="col-12">
-                <h1>
-                    <a href="<?php echo home_url(); ?>">Chrislee
-                        <span id="awsr-is">.is</span>
-                    </a>
-                </h1>
+                <div class="col-12">
+                    <h1>
+                        <a href="<?php echo home_url(); ?>">Chrislee
+                            <span id="awsr-is">.is</span>
+                        </a>
+                    </h1>
+
+                </div>
+                <!-- .col -->
 
             </div>
-            <!-- .col -->
+            <!-- .row -->
 
         </div>
-        <!-- .row -->
+        <!-- .awsr-header -->
 
-    </div>
-    <!-- .awsr-header -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <nav class="navbar navbar-expand-md navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align:center;">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <small id="awsr-nav-inline">
+                            <span id="awsr-nav-hide">a&nbsp;</small>
+                        </span>
+                        <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/a-writer'); ?>">freelance writer</a>
+                    </li>
+                    <li class="nav-item">
+                        <small id="awsr-nav-inline">
+                            <span id="awsr-nav-hide">&amp;&nbsp;</small>
+                        </span>
+                        <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/a-web-designer'); ?>">Web Designer</a>
+                    </li>
+                    <li class="nav-item">
+                        <small id="awsr-nav-inline">
+                            <span id="awsr-nav-hide">| </span>
+                            <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/thinking-about'); ?>">Blog</a>
+                        </small>
+                    </li>
+                    <li class="nav-item">
+                        <small id="awsr-nav-inline">
+                            <span id="awsr-nav-hide">| </span>
+                            <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/contact-me'); ?>">Contact me</a>
+                        </small>
+                    </li>
+                    <li class="nav item">
+                        <?php get_sidebar(); ?>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align:center;">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <small id="awsr-nav-inline">
-                        <span id="awsr-nav-hide">a&nbsp;</small>
-                    </span>
-                    <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/a-writer'); ?>">freelance writer</a>
-                </li>
-                <li class="nav-item">
-                    <small id="awsr-nav-inline">
-                        <span id="awsr-nav-hide">&amp;&nbsp;</small>
-                    </span>
-                    <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/a-web-designer'); ?>">Web Designer</a>
-                </li>
-                <li class="nav-item">
-                    <small id="awsr-nav-inline">
-                        <span id="awsr-nav-hide">| </span>
-                        <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/thinking-about'); ?>">Blog</a>
-                    </small>
-                </li>
-                <li class="nav-item">
-                    <small id="awsr-nav-inline">
-                        <span id="awsr-nav-hide">| </span>
-                        <a id="awsr-nav-inline" class="nav-link" href="<?php echo home_url('/contact-me'); ?>">Contact me</a>
-                    </small>
-                </li>
-                <li class="nav item">
-                    <?php get_sidebar(); ?>
-                </li>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="container-fluid">
+        <div class="container-fluid">

@@ -18,7 +18,7 @@
                     <h3 id="home">Words to make your business 💥 pop 💥</h3>
                     <br>Reliable, speedy, &amp; experienced
                     <br> Backed up by
-                    <A href="<?php echo home_url('/writing'); ?>">a portfolio of satisfied customers</A>
+                    <A href="<?php echo home_url('/writing-portfolio'); ?>">a portfolio of satisfied customers</A>
                     <br>My copy increases engagement, leads, &amp; conversions
                     <br> SEO optimised: 10+ years in the industry
                     <br> Published in print and digital: magazines, newspapers &amp; beyond
