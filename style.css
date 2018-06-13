@@ -429,7 +429,7 @@ hr#blog {
 #cta {
     z-index: 5;
     box-shadow: 0.5px 0.5px 0.5px #5faeec;
-    border-radius: 10px;
+    border-radius: 35px;
     border: 3px solid whitesmoke;
     background-color: #5faeec;
     color: white;
@@ -440,7 +440,7 @@ hr#blog {
 #sticky-cta {
     position: sticky;
     top: 60px;
-    z-index: 100;
+    z-index: 10;
 }
 
 /* Search - these aren't awsr but overwrite theme tags */
@@ -629,7 +629,7 @@ img.size-full {
     color: white;
     position: sticky;
     top: 0px;
-    z-index: 10;
+    z-index: 12;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -714,9 +714,6 @@ div.wpcf7-aborted {
     }
     .awsr-front-grid-left {
         text-align: left;
-    }
-    #sticky-cta {
-        top: 100px;
     }
 }
 
