@@ -46,6 +46,7 @@ ul.post-categories {
 
 .wrapper {
     height: auto;
+    min-height: 100vh;
 }
 
 .aligncenter {

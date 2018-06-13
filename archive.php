@@ -4,9 +4,9 @@
 
 
 
-    <h2>Archive of posts about
-        <?php single_tag_title(); ?>
-</h2> <hr>
+    All posts in the series '
+        <?php single_tag_title(); ?>':
+ <hr>
 
     <div class="row">
 
