@@ -545,6 +545,10 @@ img.size-full {
     border: none;
 }
 
+#awsr-single-content img {
+    border: 1px solid darkslategrey
+}
+
 /* Contact form 7 */
 
 .wpcf7-form input,
