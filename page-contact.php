@@ -14,7 +14,7 @@
 
         <div class="col-12">
 
-		If you're looking for a <strong>good</strong>, <strong>reliable</strong>, and <strong>cost-effective</strong> <a href="https://chrislee.is/a-writer/">freelance writer</a> or <a href="https://chrislee.is/a-web-designer">web designer</a></strong>, get in touch.<p>
+		If you're looking for a <strong>good</strong>, <strong>reliable</strong>, and <strong>cost-effective</strong> <a href="<?php echo home_url('/a-writer'); ?>">freelance writer</a> or <a href="<?php echo home_url('/a-web-designer'); ?>">web designer</a></strong>, get in touch.<p>
 
 			</div><!-- col --> 
             </div><!-- row -->

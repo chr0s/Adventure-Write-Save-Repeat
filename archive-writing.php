@@ -9,10 +9,10 @@ An ever-growing gallery of my published writing. If the descriptions aren't juic
 If you like the look of these writings and fancy one for yourself, click the big blue button:
 
 <div class="row" id="sticky-cta">
-<div class="col-sm-6 offset-sm-3 col-10 offset-1" id="cta">
-            Hire me. Via
-            <a href="<?php echo home_url('/contact-me'); ?>">digital</a> or over coffee ☕ 
-        </div></div>
+<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 " id="cta">
+
+                <a href="<?php echo home_url('/contact-me'); ?>">Hire me</a>, and join my list of happy customers
+            </div></div>
 
 <hr>
 <div class="row">

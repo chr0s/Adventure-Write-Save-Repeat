@@ -18,11 +18,10 @@
                 <?php echo $post->post_content; ?>
 
                 <div class="row" id="sticky-cta">
-                    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12 " id="cta">
-                        Looking for a slick new site?
-                        <br>Get in touch
-                        <a href="<?php echo home_url('/contact-me'); ?>">digitally</a> or, let's chat over coffee ☕
-                    </div>
+                <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 " id="cta">
+
+<a href="<?php echo home_url('/contact-me'); ?>">Hire me</a> if you want a slick new site
+</div>
                 </div>
 
                 <hr>
