@@ -8,7 +8,7 @@
     <h2 >
         <?php the_title(); ?>
     </h2>
-<div class="row">
+<div class="row" style="display: block" >
     <?php 
     
     if( have_posts() ):

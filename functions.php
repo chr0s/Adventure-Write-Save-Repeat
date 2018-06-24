@@ -325,3 +325,4 @@ function jt_cmb2_get_file_list_images( $writing_gallery, $img_size = 'xs-wide' )
 	}
 	return $images ? '<div class="row">' . $images . '</div>' : '';
 }
+

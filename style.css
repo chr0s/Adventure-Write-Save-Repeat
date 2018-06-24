@@ -723,6 +723,9 @@ div.wpcf7-aborted {
 }
 
 @media screen and (max-width: 767.98px) {
+    body {
+        word-break: break-word;
+    }
     body.awsr-home .container-fluid {
         background-color: white;
     }
