@@ -62,7 +62,7 @@
     <script>
         $('#writer').mouseover(function () {
             $('#web-designer').css("background-image",
-                "url('http://localhost/chris/wp-content/uploads/2017/10/Typewriter-1.png')");
+                "url('<?php echo home_url(); ?>/wp-content/uploads/2017/10/Typewriter-1.png')");
             $('#home-border-right').css("opacity", "0"); // change css
         });
         $('#writer').mouseleave(function () {
@@ -72,7 +72,7 @@
 
         $('#web-designer').mouseover(function () {
             $('#writer').css("background-image",
-                "url('http://localhost/chris/wp-content/uploads/2018/06/surfing-the-web.png')");
+                "url('<?php echo home_url(); ?>/wp-content/uploads/2018/06/surfing-the-web.png')");
             $('#home-border-left').css("opacity", "0"); // change css
         });
         $('#web-designer').mouseleave(function () {
