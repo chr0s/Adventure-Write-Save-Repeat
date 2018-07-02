@@ -344,7 +344,7 @@ hr#blog {
 }
 
 .awsr-front-grid {
-    flex: 1;
+/*   flex: 1; */
     background-repeat: no-repeat;
     background-size: contain;
 }
