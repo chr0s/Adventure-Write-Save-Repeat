@@ -6,7 +6,7 @@
     <title>Chrislee.is</title>
     <?php wp_head(); ?>
 
-    <base href="http://localhost/chris">
+    <base href="https://chrislee.is/">
 
     <link rel="shortcut icon" href="<?php echo home_url(); ?>/wp-content/uploads/2018/04/ico.ico" />
 

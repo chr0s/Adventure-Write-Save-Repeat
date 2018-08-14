@@ -7,7 +7,7 @@
  get_header(); ?>
 
     <div class="container" id="awsr-content">
-        <h2>WORDS TO MAKE YOUR BUSINESS 💥 POP 💥</h2>
+        <h2>WORDS THAT 💥 POP 💥</h2>
         <div class="row">
             <div class="col-md-8">
                 <p>
@@ -36,7 +36,7 @@
         <div class="row" id="sticky-cta">
             <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12 " id="cta">
 
-                <a href="<?php echo home_url('/contact-me'); ?>">Hire me</a>, and I will write you good words
+                <a href="<?php echo home_url('/contact-me'); ?>">Hire me</a>, and I will write you the right words
             </div>
         </div>
 

@@ -15,7 +15,7 @@
             <p>
 
                 <div id="home-border-left">
-                    <h3 id="home">Words to make your business 💥 pop 💥</h3>
+                    <h3 id="home">Words that 💥 pop 💥</h3>
                     <br>Reliable, speedy, &amp; experienced
                     <br> Backed up by
                     <A href="<?php echo home_url('/writing-portfolio'); ?>">a portfolio of satisfied customers</A>
